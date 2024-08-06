@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/home-styles.css">
+    <link rel="stylesheet" href="../css/navbar-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <main id="content"></main>
+    <div id="footer"></div>
+    <script src="../javascript/components.js"></script>
+    <script>
+        loadComponent('navbar', 'navbar.html');
+        loadComponent('content', 'home.html');
+        loadComponent('footer', 'footer.html');
+        setMarqueeSpeed(20);
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #DBC4AF;
+    color: #000000;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar h1 {
+    margin-top: 20px;
+}
+
+.sidebar p {
+    font-size: 1.2em;
+    margin-top: -10px;
+}
+
+.contact, .education, .languages {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact ul, .languages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact ul li, .languages ul li {
+    margin: 10px 0;
+}
+
+.contact ul li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #fff;
+}
+
+.edu-item h3, .edu-item p {
+    margin: 5px 0;
+}
+
+.content {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    background-color: #AC7B7D;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 20px -20px;
+}
+
+.job h3, .job p {
+    margin: 5px 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #785589;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 25px; 
+}
