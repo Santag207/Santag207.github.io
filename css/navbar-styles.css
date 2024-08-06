@@ -1,19 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #fff;
 }
 
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+    color: #1A1A1A;
+    font-family: 'Times New Roman', serif;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+}
+
 nav {
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #DBC4AF; /* Color de fondo del navbar */
+    background-color: #000000; 
     padding: 10px;
-    border-radius: 25px; /* Bordes redondeados */
-    margin: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+    border-radius: 25px;
+    border: 2px solid #000000; 
+    min-width: 270px;
+    max-width: 370px;
+    margin: 20px auto;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 nav ul {
@@ -21,31 +51,50 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 5px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 20px;
-    background-color: #1A1A1A;
-    border: 1px solid #1A1A1A;
-    border-radius: 25px;
+    padding: 10px 25px;
+    background-color: #000000;
+    border: 1px solid #000000;
     transition: all 0.3s ease;
     font-size: 15px;
+    position: relative;
+    overflow: hidden;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #293854;
+    border: 1px solid #293854;
     color: #fff;
-    
 }
 
 nav ul li a.active {
-    background-color: #ffffff; /* Gris claro */
-    color: black; /* Color del texto cuando está activo */
-    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #ffffff;
+}
+
+.content-section {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-in {
+    transform: translateX(0%);
+}
+
+.slide-out {
+    transform: translateX(100%);
+}
+
+.hidden {
+    visibility: hidden;
 }

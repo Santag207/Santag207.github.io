@@ -1,6 +1,6 @@
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
 }
@@ -10,13 +10,21 @@ footer div {
 }
 
 footer a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 footer input[type="email"] {
@@ -24,3 +32,19 @@ footer input[type="email"] {
     margin-right: 5px;
     color: black;
 }
+
+footer button {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+}
+
+footer button:hover {
+    background-color: #293854; 
+}
+
+footer button:focus {
+    outline: none;}

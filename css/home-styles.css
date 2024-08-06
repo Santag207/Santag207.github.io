@@ -1,10 +1,20 @@
 .home-content {
-    background-color: black;
-    color: white;
-    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    text-align: left;
 }
 
 .marquee {
@@ -19,10 +29,10 @@
 .marquee span {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee 30s linear infinite; /* Ajusta este valor para cambiar la velocidad */
-    font-family: 'Times New Roman', serif; /* Cambia el tipo de letra a serif */
-    font-size: 18px; /* Ajusta el tamaño de la fuente aquí */
-    color: #000; /* Cambia el color del texto aquí */
+    animation: marquee 30s linear infinite; 
+    font-family: 'Times New Roman', serif; 
+    font-size: 18px; 
+    color: #000; 
 }
 
 @keyframes marquee {
