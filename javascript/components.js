@@ -101,17 +101,42 @@ function initializeSpline() {
     }
 }
 
-// Inicializar listeners al cargar los componentes
-document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('navbar', 'html/navbar.html');
-    loadComponent('footer', 'html/footer.html');
-    loadComponent('content', 'html/home.html'); // Carga inicial de la página de inicio
-    setActiveLink(document.querySelector('nav ul li a[data-target="home"]')); // Marcar Home inicialmente
+function changeStyle(styleSheet) {
+    const content = document.getElementById('content');
+    content.classList.add('slide-out-down');
+    setTimeout(() => {
+        document.getElementById('cv-stylesheet').href = `../css/${styleSheet}`;
+        content.classList.remove('slide-out-down');
+        content.classList.add('hidden');
+        setTimeout(() => {
+            content.classList.remove('hidden');
+            content.classList.add('slide-in-up');
+        }, 100);
+    }, 500);
+}
 
-    window.addEventListener('popstate', () => {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            loadComponentWithAnimation('content', `html/${hash}.html`);
-        }
-    });
+// Inicializar listeners al cargar los componentes
+document.addEventListener('DOMContentLoaded', function () {
+    const style1Btn = document.getElementById('style1');
+    const style2Btn = document.getElementById('style2');
+    const contentContainer = document.getElementById('content-container');
+    const styleSheet = document.getElementById('cv-stylesheet');
+
+    function changeStyle(sheet) {
+        contentContainer.classList.add('slide-out-down');
+        setTimeout(() => {
+            styleSheet.setAttribute('href', '../css/' + sheet);
+            setTimeout(() => {
+                contentContainer.classList.remove('slide-out-down');
+                contentContainer.classList.add('hidden');
+                setTimeout(() => {
+                    contentContainer.classList.remove('hidden');
+                    contentContainer.classList.add('slide-in-up');
+                }, 100);
+            }, 100);
+        }, 500);
+    }
+
+    style1Btn.addEventListener('click', () => changeStyle('cv-styles.css'));
+    style2Btn.addEventListener('click', () => changeStyle('cv-styles-ats.css'));
 });

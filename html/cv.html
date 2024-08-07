@@ -4,90 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae</title>
-    <link rel="stylesheet" href="../css/cv-styles.css">
-    <link rel="stylesheet" href="../css/navbar-styles.css">
-    <link rel="stylesheet" href="../css/footer-styles.css">
+    <link id="cv-stylesheet" rel="stylesheet" href="../css/cv/cv-styles.css">
 </head>
 <body>
-    <div id="navbar"></div>
-    <main id="content">
-        <div class="container">
-            <aside class="sidebar">
-                <div class="photo">
-                    <img src="../img/cv.jpeg" alt="Foto de perfil">
+    <div class="style-buttons">
+        <button id="style1" onclick="changeStyle('../css/cv/cv-styles.css')">Style Dry Martini</button>
+        <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
+        <button id="style3" onclick="changeStyle('../css/cv/cv-styles-police.css')">Style Police</button>
+        <button id="style4" onclick="changeStyle('../css/cv/cv-styles-calypso.css')">Style Calypso</button>
+    </div>
+    <div id="content-container" class="container slide-in-up">
+        <aside class="sidebar">
+            <div class="photo">
+                <img src="../img/cv.jpeg" alt="Foto de perfil">
+            </div>
+            <h1>Santiago Castro Zuluaga</h1>
+            <p>System Engineering Student</p>
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>🏠 Bogota, Colombia</li>
+                    <li>🌐 <a href="https://github.com/Santag207" target="_blank">GitHub (Link)</a></li>
+                    <li>📧 castrosantiago476@gmail.com</li>
+                    <li>📧 castrozsantiago@javeriana.edu.co</li>
+                    <li>👨‍💻 <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">LinkedIn (Link)</a></li>
+                    <li>📞 3142710256</li>
+                    
+                </ul>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <h3>high school certificate</h3>
+                    <p>2007 - 2020<br>Minuto de Dios</p>
                 </div>
-                <h1>Santiago Castro Zuluaga</h1>
-                <p>System Engineering Student</p>
-                <section class="contact">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>🏠 Bogota, Colombia</li>
-                        <li>🌐 <a href="https://github.com/Santag207" target="_blank">GitHub (Link)</a></li>
-                        <li>📧 castrosantiago476@gmail.com</li>
-                        <li>📧 castrozsantiago@javeriana.edu.co</li>
-                        <li>👨‍💻 <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">LinkedIn (Link)</a></li>
-                        <li>📞 3142710256</li>
-                        
-                    </ul>
-                </section>
-                <section class="education">
-                    <h2>Education</h2>
-                    <div class="edu-item">
-                        <h3>high school certificate</h3>
-                        <p>2007 - 2020<br>Minuto de Dios</p>
-                    </div>
-                    <div class="edu-item">
-                        <h3>Systems engineering degree</h3>
-                        <p>2022 - Now<br>Pontifical Javeriana University</p>
-                        <p>Studying sixth semester of degree</p>
-                    </div>
-                </section>
-                <section class="languages">
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>Español</li>
-                        <li>Inglés</li>
-                        <li>A little bit of Italian</li>
-                    </ul>
-                </section>
-            </aside>
-            <main class="content">
-                <section class="profile">
-                    <h2>Profile</h2>
-                    <p>I am a passionate and creative System Engineering student currently in my sixth semester. I excel in teamwork and am known for my flexibility and eagerness to learn new technologies and methodologies. My experience in programming has enabled me to develop innovative and efficient solutions, and I am always looking for opportunities to improve and complement my existing knowledge. I am committed to continuous growth and excellence in my field. I also have a strong affinity for data management and a quick learning ability in any environment.</p>
-                </section>
-                <section class="experience">
-                    <h2>Experiencia</h2>
-                    <div class="job">
-                        <h3>Internships in independent companies</h3>
-                        <p>Azucafe | 2022 - Now</p>
-                        <p>Development of a complete website, organization of processes, accounting management and database maintenance.</p>
-                    </div>
-                    <div class="job">
-                        <h3>Participation in Javex Hotbed </h3>
-                        <p>PujVex Robotics | 2024 - Now</p>
-                        <p>Member of the logistics division with database and resource management.</p>
-                    </div>
-                </section>
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Creativity</li>
-                        <li>Teamwork</li>
-                        <li>Organization</li>
-                        <li>Project management and assistance</li>
-                        <li>Kind and understanding</li>
-                    </ul>
-                </section>
-            </main>
-        </div>
-    </main>
-    <div id="footer"></div>
-    <script src="../javascript/components.js"></script>
+                <div class="edu-item">
+                    <h3>Systems engineering degree</h3>
+                    <p>2022 - Now<br>Pontifical Javeriana University</p>
+                    <p>Studying sixth semester of degree</p>
+                </div>
+            </section>
+            <section class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Español (C1)</li>
+                    <li>Inglés (B2)</li>
+                    <li>Italian (A2)</li>
+                </ul>
+            </section>
+        </aside>
+        <main class="content">
+            <section class="profile">
+                <h2>Profile</h2>
+                <p>I am a passionate and creative System Engineering student currently in my sixth semester. I excel in teamwork and am known for my flexibility and eagerness to learn new technologies and methodologies. My experience in programming has enabled me to develop innovative and efficient solutions, and I am always looking for opportunities to improve and complement my existing knowledge. I am committed to continuous growth and excellence in my field. I also have a strong affinity for data management and a quick learning ability in any environment.</p>
+            </section>
+            <section class="experience">
+                <h2>Experiencia</h2>
+                <div class="job">
+                    <h3>Internships in independent companies</h3>
+                    <p>Azucafe | 2022 - Now</p>
+                    <p>Development of a complete website, organization of processes, accounting management and database maintenance.</p>
+                </div>
+                <div class="job">
+                    <h3>Participation in Javex Hotbed </h3>
+                    <p>PujVex Robotics | 2024 - Now</p>
+                    <p>Member of the logistics division with database and resource management.</p>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Creativity</li>
+                    <li>Teamwork</li>
+                    <li>Organization</li>
+                    <li>Project management and assistance</li>
+                    <li>Kind and understanding</li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <script>
-        loadComponent('navbar', 'navbar.html');
-        loadComponent('footer', 'footer.html');
+        function changeStyle(sheet) {
+            const container = document.getElementById('content-container');
+            container.classList.add('slide-out-down');
+            setTimeout(() => {
+                document.getElementById('cv-stylesheet').href = '../css/' + sheet;
+                container.classList.remove('slide-out-down');
+                container.classList.add('hidden');
+                setTimeout(() => {
+                    container.classList.remove('hidden');
+                    container.classList.add('slide-in-up');
+                }, 100);
+            }, 500);
+        }
     </script>
 </body>
 </html>

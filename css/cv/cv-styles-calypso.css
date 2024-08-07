@@ -1,0 +1,242 @@
+/* cv-styles-calypso.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #000000;
+    font-family: 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.header-left {
+    flex: 1;
+    text-align: left;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile, .contact, .experience, .education, .skills, .interests {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.profile {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #f1c40f;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.photo img {
+
+    width: 150px;
+    height: 150px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.experience, .education {
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+}
+
+.experience h2, .education h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 10px;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.experience-item p, .education-item p {
+    margin: 5px 0;
+}
+
+.skills, .interests {
+    background-color: #f1c40f;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.skills h2, .interests h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.skills ul, .interests ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.skills li, .interests li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills li {
+    margin: 5px 0;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.skills li::before, .interests li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.skills-bar {
+    flex: 1;
+    height: 10px;
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+
+.skills-bar span {
+    display: block;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.style-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.style-buttons button {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    margin: 0 5px;
+    border-radius: 25px;
+}
+
+.style-buttons button:hover {
+    background-color: #284c69;
+    border: 1px solid #284c69;
+    color: #fff;
+}
+
+.style-buttons button.active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #ffffff;
+}
+
+.slide-in-up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.slide-out-down {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
