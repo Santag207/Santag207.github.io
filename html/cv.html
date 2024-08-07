@@ -29,7 +29,6 @@
                     <li>📧 castrozsantiago@javeriana.edu.co</li>
                     <li>👨‍💻 <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">LinkedIn (Link)</a></li>
                     <li>📞 3142710256</li>
-                    
                 </ul>
             </section>
             <section class="education">
@@ -84,20 +83,6 @@
             </section>
         </main>
     </div>
-    <script>
-        function changeStyle(sheet) {
-            const container = document.getElementById('content-container');
-            container.classList.add('slide-out-down');
-            setTimeout(() => {
-                document.getElementById('cv-stylesheet').href = '../css/' + sheet;
-                container.classList.remove('slide-out-down');
-                container.classList.add('hidden');
-                setTimeout(() => {
-                    container.classList.remove('hidden');
-                    container.classList.add('slide-in-up');
-                }, 100);
-            }, 500);
-        }
-    </script>
+    <script src="../javascript/cv.js"></script>
 </body>
 </html>

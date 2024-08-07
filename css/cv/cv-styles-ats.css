@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap;
     max-width: 600px;
     margin: 20px auto;
-    color: #1A1A1A;
+    color: #000000;
     font-family: 'Times New Roman', serif;
 }
 
@@ -125,8 +125,8 @@ ul {
 }
 
 .style-buttons button:hover {
-    background-color: #284c69;
-    border: 1px solid #284c69;
+    background-color: #293854;
+    border: 1px solid #293854;
     color: #fff;
 }
 

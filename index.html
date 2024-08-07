@@ -12,12 +12,27 @@
     <div id="navbar"></div>
     <main id="content" class="content-section slide-in"></main>
     <div id="footer"></div>
+    <script src="javascript/utils.js"></script>
     <script src="javascript/components.js"></script>
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/cv.js"></script>
+    <script src="javascript/footer.js"></script>
     <script>
-        loadComponent('navbar', 'html/navbar.html');
-        loadComponent('content', 'html/home.html');
-        loadComponent('footer', 'html/footer.html');
-        setMarqueeSpeed(20);
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComponent('navbar', 'html/navbar.html');
+            loadComponent('content', 'html/home.html');
+            loadComponent('footer', 'html/footer.html');
+
+            setMarqueeSpeed(20);
+        });
+
+        function setMarqueeSpeed(speed) {
+            const marquee = document.querySelector('.marquee');
+            if (marquee) {
+                marquee.style.animationDuration = `${speed}s`;
+            }
+        }
     </script>
 </body>
 </html>
