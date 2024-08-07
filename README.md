@@ -18,28 +18,32 @@ The project has the following structure:
 - │   │   ├── cv-styles-ats.css
 - │   │   ├── cv-styles-calypso.css
 - │   │   ├── cv-styles-police.css
-- │   │   └── cv-styles.css
+- │   │   ├── cv-styles.css
 - │   ├── footer-styles.css
 - │   ├── home-styles.css
-- │   └── navbar-styles.css
+- │   ├── navbar-styles.css
 - │
 - ├── html/
 - │   ├── cv.html
 - │   ├── footer.html
 - │   ├── home.html
-- │   └── navbar.html
+- │   ├── navbar.html
 - │
 - ├── img/
-- │   ├── iconos/
-- │   │   ├── githublogo.png
-- │   │   ├── instagram-logo.png
-- │   │   ├── linkedin-logo.png
-- │   │   ├── stack_overflow_icon.png
+- │   ├── githublogo.png
+- │   ├── instagram-logo.png
+- │   ├── linkedin-logo.png
+- │   ├── stack_overflow_icon.png
 - │   ├── cv.jpeg
-- │   └── navbar.png
+- │   ├── navbar.png
 - │
 - ├── javascript/
-- │   └── components.js
+- │   ├── components.js
+- │   ├── cv.js
+- │   ├── footer.js
+- │   ├── home.js
+- │   ├── navbar.js
+- │   ├── utils.js
 - │
 - ├── index.html
 - └── README.md
