@@ -13,9 +13,12 @@ This repository contains the source code for Santiago Castro Zuluaga's personal 
 
 The project has the following structure:
 - SANTAG207.GITHUB.IO/
-- │
 - ├── css/
-- │   ├── cv-styles.css
+- │   ├── cv/
+- │   │   ├── cv-styles-ats.css
+- │   │   ├── cv-styles-calypso.css
+- │   │   ├── cv-styles-police.css
+- │   │   └── cv-styles.css
 - │   ├── footer-styles.css
 - │   ├── home-styles.css
 - │   └── navbar-styles.css
@@ -27,14 +30,19 @@ The project has the following structure:
 - │   └── navbar.html
 - │
 - ├── img/
-- │   ├── navbar.png
-- │   └── cv.jpeg
+- │   ├── iconos/
+- │   │   ├── githublogo.png
+- │   │   ├── instagram-logo.png
+- │   │   ├── linkedin-logo.png
+- │   │   ├── stack_overflow_icon.png
+- │   ├── cv.jpeg
+- │   └── navbar.png
 - │
 - ├── javascript/
 - │   └── components.js
 - │
-- └── index.html
-
+- ├── index.html
+- └── README.md
 
 ### CSS Files
 
