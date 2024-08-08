@@ -18,16 +18,18 @@ The project has the following structure:
 - │   │   ├── cv-styles-ats.css
 - │   │   ├── cv-styles-calypso.css
 - │   │   ├── cv-styles-police.css
-- │   │   ├── cv-styles.css
+- │   │   ├── cv-styles-dry-martini.css
 - │   ├── footer-styles.css
 - │   ├── home-styles.css
 - │   ├── navbar-styles.css
+- │   ├── pruebas-styles.css
 - │
 - ├── html/
 - │   ├── cv.html
 - │   ├── footer.html
 - │   ├── home.html
 - │   ├── navbar.html
+- │   ├── pruebas.html
 - │
 - ├── img/
 - │   ├── githublogo.png
@@ -44,6 +46,7 @@ The project has the following structure:
 - │   ├── home.js
 - │   ├── navbar.js
 - │   ├── utils.js
+- │   ├── pruebas.js
 - │
 - ├── index.html
 - └── README.md

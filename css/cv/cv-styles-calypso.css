@@ -240,3 +240,15 @@ a {
 .hidden {
     visibility: hidden;
 }
+
+.photo {
+    padding: 6px;
+}
+
+.name-text {
+    padding: 18px;
+}
+
+.career-text {
+    padding: 18px;
+}

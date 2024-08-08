@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (defaultStyleButton) {
         defaultStyleButton.classList.add('active');
         defaultStyleButton.disabled = true;
-        changeStyle('../css/cv/cv-styles.css');
+        changeStyle('../css/cv/cv-styles-dry-martini.css');
     }
 });

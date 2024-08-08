@@ -3,7 +3,11 @@ function highlightActiveLink() {
     const navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(link => {
-        if (currentLocation.includes(link.getAttribute('href')) || (currentLocation.endsWith('#home') && link.getAttribute('data-target') === 'home') || (!window.location.hash && link.getAttribute('data-target') === 'home')) {
+        if (currentLocation.includes(link.getAttribute('href')) || 
+            (currentLocation.endsWith('#home') && link.getAttribute('data-target') === 'home') || 
+            (currentLocation.endsWith('#cv') && link.getAttribute('data-target') === 'cv') || 
+            (currentLocation.endsWith('#pruebas') && link.getAttribute('data-target') === 'pruebas') || 
+            (!window.location.hash && link.getAttribute('data-target') === 'home')) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
