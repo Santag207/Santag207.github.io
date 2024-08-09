@@ -10,6 +10,35 @@
     <div class="container">
         <h1>Pruebas</h1>
         <p>Esta es la página de pruebas.</p>
+
+        <!-- Agrega el canvas donde se cargará la escena de Spline -->
+        <canvas id="canvas3d" style="width: 100%; height: 500px;"></canvas>
+
+        <!-- Video de ejemplo -->
+        <video width="600" autoplay loop muted playsinline>
+            <source src="../img/cubic.mp4" type="video/mp4">
+        </video>
     </div>
+
+    <!-- Vincula el archivo pruebas.js -->
+    <script src="../javascript/pruebas.js"></script>
+
+    <script>
+        // Desactivar controles del video y evitar que se pause
+        const video = document.querySelector('video');
+        video.removeAttribute('controls'); // Elimina los controles visibles
+        video.addEventListener('play', () => {
+            video.controls = false; // Asegura que los controles no se muestren
+        });
+
+        video.addEventListener('pause', () => {
+            video.play(); // Evita que el video se pause
+        });
+
+        video.addEventListener('ended', () => {
+            video.play(); // Reinicia el video al terminar
+        });
+    </script>
+
 </body>
 </html>
