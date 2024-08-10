@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 .home-content {
     background-color: #000000;
     color: #ffffff;
@@ -6,16 +13,50 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-family: 'Times New Roman', serif;
-    position: relative;
     margin: 0;
+    flex-direction: column;
 }
 
-.name {
-    position: absolute;
-    top: 10px;
+.link {
+    position: absolute; 
+    top: 40px;
     left: 20px;
     text-align: left;
+    font-size: 20px;
+}
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.career {
+    font-size: 25px;
+    font-weight: 300;
+    color: #888888;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 100%; 
+    padding: 80px;
+}
+
+.links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px;
+}
+
+.links img {
+    max-width: 50px; 
+    margin-bottom: 10px;
 }
 
 .marquee {
@@ -29,9 +70,8 @@
 
 .marquee span {
     display: inline-block;
-    padding-left: 100%;
+    padding-left: 40%;
     animation: marquee 30s linear infinite; 
-    font-family: 'Times New Roman', serif; 
     font-size: 18px; 
     color: #000; 
 }
@@ -40,3 +80,8 @@
     0% { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
 }
+
+.git-icon {
+    filter: invert(100%);
+}
+
