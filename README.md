@@ -48,6 +48,20 @@ The project has the following structure:
 - │   ├── utils.js
 - │   ├── pruebas.js
 - │
+- ├── languages/
+- │   ├── cv/
+- │   │   ├── en.json
+- │   │   ├── es.json
+- │   ├── home/
+- │   │   ├── en.json
+- │   │   ├── es.json
+- │   ├── index/
+- │   │   ├── en.json
+- │   │   ├── es.json
+- │   ├── navbar/
+- │   │   ├── en.json
+- │   │   ├── es.json
+- │
 - ├── index.html
 - └── README.md
 

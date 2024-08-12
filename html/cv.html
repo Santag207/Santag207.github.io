@@ -4,85 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="cvTitle"></title>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
     <link id="cv-stylesheet" rel="stylesheet" href="../css/cv/cv-styles-dry-martini.css">
+    <link rel="stylesheet" href="../css/navbar-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
 </head>
 <body>
-    <div class="style-buttons">
-        <button id="style1" onclick="changeStyle('../css/cv/cv-styles-dry-martini.css')">Style Dry Martini</button>
-        <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
-        <button id="style3" onclick="changeStyle('../css/cv/cv-styles-police.css')">Style Police</button>
-        <button id="style4" onclick="changeStyle('../css/cv/cv-styles-calypso.css')">Style Calypso</button>
-    </div>
-    <div id="content-container" class="container slide-in-up">
-        <aside class="sidebar">
-            <div class="photo">
-                <img src="../img/cv.jpeg" alt="Profile Photo" class="photo">
+    <div id="navbar"></div>
+    <main id="content" class="content-section slide-in">
+        <div class="style-buttons">
+             <button id="style1" onclick="changeStyle('../css/cv/cv-styles-dry-martini.css')">Style Dry Martini</button>
+            <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
+            <button id="style3" onclick="changeStyle('../css/cv/cv-styles-police.css')">Style Police</button>
+            <button id="style4" onclick="changeStyle('../css/cv/cv-styles-calypso.css')">Style Calypso</button>
+        </div>
+        <div id="content-container" class="container slide-in-up">
+            <aside class="sidebar">
+                <div class="photo">
+                    <img src="../img/cv.jpeg" alt="Profile Photo" class="photo">
+                </div>
+                <h1><span id="name" class="name-text"></span></h1>
+                <p><span id="career" class="career-text"></span></p>
+                <section id="contact" class="contact">
+                    <h2 id="contactHeading"></h2>
+                    <ul>
+                        <li>🏠 <a id="address"></a></li>
+                        <li>🌐 <a id="githubLink" href="https://github.com/Santag207" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li>📧 <a id="email1"></a></li>
+                        <li>📧 <a id="email2"></a></li>
+                        <li>👨‍💻 <a id="linkedinLink" href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li>📞 <a id="phone"></a> </li>
+                    </ul>
+                </section>
+                <section id="education" class="education">
+                    <h2 id="educationHeading"></h2>
+                    <div class="edu-item">
+                        <h3 id="highSchool"></h3>
+                        <div class="degree-container">
+                            <p id="highSchoolYears"></p>
+                            <p id="highSchoolDetails" class="details"></p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <h3 id="degree"></h3>
+                        <div class="degree-container">
+                            <p id="degreeYears"></p>
+                            <p id="degreeDetails" class="details"></p>
+                        </div>
+                        <p id="degreeStatus"></p>
+                    </div>
+                </section>
+                <section id="languages-section" class="languages">
+                    <h2 id="languagesHeading"></h2>
+                    <ul>
+                        <li id="spanish"></li>
+                        <li id="english"></li>
+                        <li id="italian"></li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="content">
+                <section id="profile" class="profile">
+                    <h2 id="profileHeading"></h2>
+                    <p id="profileDescription"></p>
+                </section>
+                <section id="experience" class="experience">
+                    <h2 id="experienceHeading"></h2>
+                    <div class="job">
+                        <h3 id="job1Title"></h3>
+                        <p id="job1Company"></p>
+                        <p id="job1Description"></p>
+                    </div>
+                    <div class="job">
+                        <h3 id="job2Title"></h3>
+                        <p id="job2Vompany"></p>
+                        <p id="job2Description"></p>
+                    </div>
+                </section>
+                <section id="skills" class="skills">
+                    <h2 id="skillsHeading"></h2>
+                    <ul>
+                        <li id="skill1"></li>
+                        <li id="skill2"></li>
+                        <li id="skill3"></li>
+                        <li id="skill4"></li>
+                        <li id="skill5"></li>
+                        <li id="skill6"></li>
+                    </ul>
+                </section>
             </div>
-            <h1><span id="name" class="name-text"></span></h1>
-            <p><span id="career" class="career-text"></span></p>
-            <section id="contact" class="contact">
-                <h2 id="contactHeading"></h2>
-                <ul>
-                    <li 🏠 id="address"></li>
-                    <li>🌐 <a id="githubLink" href="https://github.com/Santag207" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li 📧 id="email1"></li>
-                    <li 📧 id="email2"></li>
-                    <li>👨‍💻 <a id="linkedinLink" href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li 📞 id="phone"></li>
-                </ul>
-            </section>
-            <section id="education" class="education">
-                <h2 id="educationHeading"></h2>
-                <div class="edu-item">
-                    <h3 id="highSchool"></h3>
-                    <p id="highSchoolDetails"></p>
-                </div>
-                <div class="edu-item">
-                    <h3 id="degree"></h3>
-                    <p id="degreeDetails"></p>
-                    <p id="degreeStatus"></p>
-                </div>
-            </section>
-            <section id="languages-section" class="languages">
-                <h2 id="languagesHeading"></h2>
-                <ul>
-                    <li id="spanish"></li>
-                    <li id="english"></li>
-                    <li id="italian"></li>
-                </ul>
-            </section>
-        </aside>
-        <main class="content">
-            <section id="profile" class="profile">
-                <h2 id="profileHeading"></h2>
-                <p id="profileDescription"></p>
-            </section>
-            <section id="experience" class="experience">
-                <h2 id="experienceHeading"></h2>
-                <div class="job">
-                    <h3 id="job1Title"></h3>
-                    <p id="job1Company"></p>
-                    <p id="job1Description"></p>
-                </div>
-                <div class="job">
-                    <h3 id="job2Title"></h3>
-                    <p id="job2Vompany"></p>
-                    <p id="job2Description"></p>
-                </div>
-            </section>
-            <section id="skills" class="skills">
-                <h2 id="skillsHeading"></h2>
-                <ul>
-                    <li id="skill1"></li>
-                    <li id="skill2"></li>
-                    <li id="skill3"></li>
-                    <li id="skill4"></li>
-                    <li id="skill5"></li>
-                    <li id="skill6"></li>
-                </ul>
-            </section>
         </main>
-    </div>
+    <div id="footer"></div>
+
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/components.js"></script>
+    <script src="../javascript/language.js"></script>
+    <script src="../javascript/navbar.js"></script>
     <script src="../javascript/cv.js"></script>
+    <script src="../javascript/footer.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+            loadComponent('navbar', '../html/navbar.html');
+            loadComponent('footer', '../html/footer.html');
+            setMarqueeSpeed(20);
+        });
+
+        function setMarqueeSpeed(speed) {
+            const marquee = document.querySelector('.marquee');
+            if (marquee) {
+                marquee.style.animationDuration = `${speed}s`;
+            }
+        }
+    </script>
 </body>
 </html>

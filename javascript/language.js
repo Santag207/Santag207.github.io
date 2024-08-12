@@ -28,22 +28,26 @@ function getSavedLanguage() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Tu código aquí...
-    const englishLink = document.getElementById('english-link');
-    const spanishLink = document.getElementById('spanish-link');
+    loadComponent('navbar', '../html/navbar.html').then(() => {
+        // Verificación de que los enlaces existan en el DOM
+        const englishLink = document.getElementById('english-link');
+        const spanishLink = document.getElementById('spanish-link');
 
-    if (englishLink && spanishLink) {
-        englishLink.addEventListener('click', function() {
-            changeLanguage('en');
-        });
+        if (englishLink && spanishLink) {
+            englishLink.addEventListener('click', function() {
+                changeLanguage('en');
+            });
 
-        spanishLink.addEventListener('click', function() {
-            changeLanguage('es');
-        });
+            spanishLink.addEventListener('click', function() {
+                changeLanguage('es');
+            });
 
-        const savedLanguage = getSavedLanguage();
-        changeLanguage(savedLanguage);
-    } else {
-        console.error('No se encontraron los enlaces de idioma en el DOM.');
-    }
+            const savedLanguage = getSavedLanguage();
+            changeLanguage(savedLanguage);
+        } else {
+            console.error('No se encontraron los enlaces de idioma en el DOM.');
+        }
+    }).catch(error => {
+        console.error('Error loading navbar:', error);
+    });
 });

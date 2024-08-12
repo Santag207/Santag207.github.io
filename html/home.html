@@ -4,42 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title"></title>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/home-styles.css">
+    <link rel="stylesheet" href="../css/navbar-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
 </head>
 <body>
-    <div class="marquee">
-        <span id="welcome-message"></span>
-    </div>
-
-    <div class="home-content">
-        <h1 id="links-heading" class="link"></h1>
-        <div class="name">
-            <h1 id="name" class="name"></h1>
-            <h2 id="career" class="career"></h2>
+    <div id="navbar"></div>
+    <main id="content" class="content-section slide-in">
+        <div class="marquee">  <span id="welcome-message"></span> </div>
+        
+        <div class="home-content">
+            <h1 id="links-heading" class="link"></h1>
+            <div class="name">
+                <h1 id="name" class="name"></h1>
+                <h3 id="git-name" class="gitname"></h3>
+                <h2 id="career" class="career"></h2>
+            </div>
+            <div class="links">
+                <a id="github-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/iconos/githublogo.png" class="git-icon">
+                    <span id="github-text"></span>
+                </a>
+                <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/iconos/linkedin-logo.png" class="linkeind-icon">
+                    <span id="linkedin-text"></span>
+                </a>
+                <a id="mail-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/mail.png" class="mail-icon">
+                    <span id="mail-text"></span>
+                </a>
+                <a id="pdf-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/docs.png" class="pdf-icon">
+                    <span id="pdf-text"></span>
+                </a>
+            </div>
         </div>
-        <div class="links">
-            <a id="github-link" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="../img/iconos/githublogo.png" class="git-icon">
-                <span id="github-text"></span>
-            </a>
-            <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="../img/iconos/linkedin-logo.png" class="linkeind-icon">
-                <span id="linkedin-text"></span>
-            </a>
-            <a id="mail-link" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="../img/mail.png" class="mail-icon">
-                <span id="mail-text"></span>
-            </a>
-            <a id="pdf-link" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="../img/docs.png" class="pdf-icon">
-                <span id="pdf-text"></span>
-            </a>
-        </div>
-    </div>
+    </main>
+    <div id="footer"></div>
 
     <script src="../javascript/utils.js"></script>
     <script src="../javascript/components.js"></script>
     <script src="../javascript/language.js"></script>
+    <script src="../javascript/navbar.js"></script>
     <script src="../javascript/home.js"></script>
+    <script src="../javascript/footer.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+            loadComponent('navbar', '../html/navbar.html');
+            loadComponent('footer', '../html/footer.html');
+            setMarqueeSpeed(20);
+        });
+
+        function setMarqueeSpeed(speed) {
+            const marquee = document.querySelector('.marquee');
+            if (marquee) {
+                marquee.style.animationDuration = `${speed}s`;
+            }
+        }
+    </script>
 </body>
 </html>

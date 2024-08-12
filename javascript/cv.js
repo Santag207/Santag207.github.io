@@ -47,8 +47,10 @@ function loadCVTranslations(lang) {
             document.getElementById('linkedinLink').href = data.linkedinUrl;
             document.getElementById('educationHeading').textContent = data.educationHeading;
             document.getElementById('highSchool').textContent = data.highSchool;
+            document.getElementById('highSchoolYears').innerHTML = data.highSchoolYears;
             document.getElementById('highSchoolDetails').innerHTML = data.highSchoolDetails;
             document.getElementById('degree').textContent = data.degree;
+            document.getElementById('degreeYears').innerHTML = data.degreeYears;
             document.getElementById('degreeDetails').innerHTML = data.degreeDetails;
             document.getElementById('degreeStatus').textContent = data.degreeStatus;
             document.getElementById('languagesHeading').textContent = data.languagesHeading;
@@ -77,22 +79,45 @@ function loadCVTranslations(lang) {
 
 // Inicializa la página con el idioma guardado o el predeterminado
 document.addEventListener('DOMContentLoaded', function() {
-    // Tu código aquí...
-    const englishLink = document.getElementById('english-link');
-    const spanishLink = document.getElementById('spanish-link');
+    loadComponent('navbar', '../html/navbar.html').then(() => {
+        const englishLink = document.getElementById('english-link');
+        const spanishLink = document.getElementById('spanish-link');
 
-    if (englishLink && spanishLink) {
-        englishLink.addEventListener('click', function() {
-            changeLanguage('en');
-        });
+        if (englishLink && spanishLink) {
+            englishLink.addEventListener('click', function() {
+                changeLanguage('en');
+            });
 
-        spanishLink.addEventListener('click', function() {
-            changeLanguage('es');
-        });
+            spanishLink.addEventListener('click', function() {
+                changeLanguage('es');
+            });
 
-        const savedLanguage = getSavedLanguage();
-        changeLanguage(savedLanguage);
-    } else {
-        console.error('No se encontraron los enlaces de idioma en el DOM.');
-    }
+            // Inicializa la página con el idioma guardado o predeterminado
+            const savedLanguage = getSavedLanguage();
+            loadCVTranslations(savedLanguage);
+        } else {
+            console.error('No se encontraron los enlaces de idioma en el DOM.');
+        }
+    }).catch(error => {
+        console.error('Error loading navbar:', error);
+    });
+
 });
+
+
+
+// Cambia el idioma de la página home y guarda la preferencia
+function changeLanguage(language) {
+    loadCVTranslations(language);
+    saveLanguagePreference(language);
+}
+
+// Guarda la preferencia de idioma en localStorage
+function saveLanguagePreference(language) {
+    localStorage.setItem('selectedLanguage', language);
+}
+
+// Obtiene el idioma guardado de localStorage
+function getSavedLanguage() {
+    return localStorage.getItem('selectedLanguage') || 'en';
+}

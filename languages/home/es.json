@@ -1,5 +1,5 @@
 {
-    "page-title": "Inicio",
+    "page-title": "Pagina Web Personal",
     "site-name": "Santiago Castro",
     "home-link": "Inicio",
     "cv-link": "CV",
@@ -7,7 +7,8 @@
     "language-link": "Idiomas",
     "welcome-message": "Bienvenido a mi página personal, disfrútala y contáctame si te gusta algo aquí o tienes alguna consulta de trabajo, que tengas un buen día.",
     "links-heading": "Mis Enlaces",
-    "name": "Santiago Castro Zuluaga (Santag207)",
+    "name": "Santiago Castro Zuluaga",
+    "gitName": "(Santag207)",
     "career": "Ingeniero de Sistemas",
     "github-text": "GitHub",
     "linkedin-text": "LinkedIn",

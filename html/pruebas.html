@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas</title>
     <link rel="stylesheet" href="../css/pruebas-styles.css">
+    <link rel="stylesheet" href="../css/navbar-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
 </head>
 <body>
+    <div id="navbar"></div> <!-- Contenedor para el navbar -->
+
     <div class="container">
         <h1>Pruebas</h1>
         <p>Esta es la página de pruebas.</p>
@@ -20,10 +24,31 @@
         </video>
     </div>
 
-    <!-- Vincula el archivo pruebas.js -->
+    <div id="footer"></div> <!-- Contenedor para el footer -->
+
+    <!-- Vinculación de scripts necesarios -->
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/components.js"></script>
+    <script src="../javascript/language.js"></script>
+    <script src="../javascript/navbar.js"></script>
     <script src="../javascript/pruebas.js"></script>
+    <script src="../javascript/footer.js"></script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+            loadComponent('navbar', '../html/navbar.html');
+            loadComponent('footer', '../html/footer.html');
+            setMarqueeSpeed(20); // Ajusta la velocidad de la marquesina si es necesario
+        });
+
+        function setMarqueeSpeed(speed) {
+            const marquee = document.querySelector('.marquee');
+            if (marquee) {
+                marquee.style.animationDuration = `${speed}s`;
+            }
+        }
+
         // Desactivar controles del video y evitar que se pause
         const video = document.querySelector('video');
         video.removeAttribute('controls'); // Elimina los controles visibles
@@ -39,6 +64,5 @@
             video.play(); // Reinicia el video al terminar
         });
     </script>
-
 </body>
 </html>

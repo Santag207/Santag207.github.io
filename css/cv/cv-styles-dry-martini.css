@@ -93,6 +93,21 @@ body {
     margin-top: -10px;
 }
 
+.degree-container {
+    display: flex;
+}
+
+.degree-container p {
+    margin: 0;
+    padding: 5px;
+}
+
+.details {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+
 .contact, .education, .languages {
     margin-top: 20px;
     text-align: left;
@@ -171,3 +186,4 @@ a {
 .hidden {
     visibility: hidden;
 }
+

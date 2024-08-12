@@ -15,15 +15,15 @@ function loadHomeTranslations(lang) {
             document.getElementById('welcome-message').textContent = data.welcomeMessage;
             document.getElementById('links-heading').textContent = data.linksHeading;
             document.getElementById('name').textContent = data.name;
+            document.getElementById('git-name').textContent = data.gitName;
             document.getElementById('career').textContent = data.career;
-            // Aquí puedes agregar más elementos que necesiten traducción
         })
         .catch(error => console.error('Error loading home translations:', error));
 }
 
 // Listener para cambiar el idioma desde el menú del navbar
 document.addEventListener('DOMContentLoaded', function() {
-    loadComponent('navbar', 'html/navbar.html').then(() => {
+    loadComponent('navbar', '../html/navbar.html').then(() => {
         const englishLink = document.getElementById('english-link');
         const spanishLink = document.getElementById('spanish-link');
 
