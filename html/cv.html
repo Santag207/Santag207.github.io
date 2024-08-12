@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae</title>
+    <title id="cvTitle"></title>
     <link id="cv-stylesheet" rel="stylesheet" href="../css/cv/cv-styles-dry-martini.css">
 </head>
 <body>
@@ -16,69 +16,69 @@
     <div id="content-container" class="container slide-in-up">
         <aside class="sidebar">
             <div class="photo">
-                <img src="../img/cv.jpeg" alt="Foto de perfil" class="photo">
+                <img src="../img/cv.jpeg" alt="Profile Photo" class="photo">
             </div>
-            <h1><span class="name-text">Santiago Castro Zuluaga</span></h1>
-            <p><span class="career-text">System Engineering Student</span></p>
-            <section class="contact">
-                <h2>Contact</h2>
+            <h1><span id="name" class="name-text"></span></h1>
+            <p><span id="career" class="career-text"></span></p>
+            <section id="contact" class="contact">
+                <h2 id="contactHeading"></h2>
                 <ul>
-                    <li>🏠 Bogota, Colombia</li>
-                    <li>🌐 <a href="https://github.com/Santag207" target="_blank">GitHub (Link)</a></li>
-                    <li>📧 castrosantiago476@gmail.com</li>
-                    <li>📧 castrozsantiago@javeriana.edu.co</li>
-                    <li>👨‍💻 <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">LinkedIn (Link)</a></li>
-                    <li>📞 3142710256</li>
+                    <li 🏠 id="address"></li>
+                    <li>🌐 <a id="githubLink" href="https://github.com/Santag207" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li 📧 id="email1"></li>
+                    <li 📧 id="email2"></li>
+                    <li>👨‍💻 <a id="linkedinLink" href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li 📞 id="phone"></li>
                 </ul>
             </section>
-            <section class="education">
-                <h2>Education</h2>
+            <section id="education" class="education">
+                <h2 id="educationHeading"></h2>
                 <div class="edu-item">
-                    <h3>high school certificate</h3>
-                    <p>2007 - 2020<br>Minuto de Dios</p>
+                    <h3 id="highSchool"></h3>
+                    <p id="highSchoolDetails"></p>
                 </div>
                 <div class="edu-item">
-                    <h3>Systems engineering degree</h3>
-                    <p>2022 - Now<br>Pontifical Javeriana University</p>
-                    <p>Studying sixth semester of degree</p>
+                    <h3 id="degree"></h3>
+                    <p id="degreeDetails"></p>
+                    <p id="degreeStatus"></p>
                 </div>
             </section>
-            <section class="languages">
-                <h2>Languages</h2>
+            <section id="languages-section" class="languages">
+                <h2 id="languagesHeading"></h2>
                 <ul>
-                    <li>Español (C2)</li>
-                    <li>Inglés (B2)</li>
-                    <li>Italian (A2)</li>
+                    <li id="spanish"></li>
+                    <li id="english"></li>
+                    <li id="italian"></li>
                 </ul>
             </section>
         </aside>
         <main class="content">
-            <section class="profile">
-                <h2>Profile</h2>
-                <p>I am a passionate and creative System Engineering student currently in my sixth semester. I excel in teamwork and am known for my flexibility and eagerness to learn new technologies and methodologies. My experience in programming has enabled me to develop innovative and efficient solutions, and I am always looking for opportunities to improve and complement my existing knowledge. I am committed to continuous growth and excellence in my field. I also have a strong affinity for data management and a quick learning ability in any environment.</p>
+            <section id="profile" class="profile">
+                <h2 id="profileHeading"></h2>
+                <p id="profileDescription"></p>
             </section>
-            <section class="experience">
-                <h2>Experiencia</h2>
+            <section id="experience" class="experience">
+                <h2 id="experienceHeading"></h2>
                 <div class="job">
-                    <h3>Internships in independent companies</h3>
-                    <p>Azucafe | 2022 - Now</p>
-                    <p>Development of a complete website, organization of processes, accounting management and database maintenance.</p>
+                    <h3 id="job1Title"></h3>
+                    <p id="job1Company"></p>
+                    <p id="job1Description"></p>
                 </div>
                 <div class="job">
-                    <h3>Participation in Javex Hotbed </h3>
-                    <p>Javex Robotics (PujVex) | 2024 - Now</p>
-                    <p>Member of the logistics division with database and resource management.</p>
+                    <h3 id="job2Title"></h3>
+                    <p id="job2Vompany"></p>
+                    <p id="job2Description"></p>
                 </div>
             </section>
-            <section class="skills">
-                <h2>Skills</h2>
+            <section id="skills" class="skills">
+                <h2 id="skillsHeading"></h2>
                 <ul>
-                    <li>Communication</li>
-                    <li>Creativity</li>
-                    <li>Teamwork</li>
-                    <li>Organization</li>
-                    <li>Project management and assistance</li>
-                    <li>Kind and understanding</li>
+                    <li id="skill1"></li>
+                    <li id="skill2"></li>
+                    <li id="skill3"></li>
+                    <li id="skill4"></li>
+                    <li id="skill5"></li>
+                    <li id="skill6"></li>
                 </ul>
             </section>
         </main>

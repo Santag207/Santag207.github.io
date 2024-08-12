@@ -14,6 +14,8 @@ function loadComponentWithAnimation(id, file) {
                     if (file.includes('home.html')) {
                         initializeSpline();
                     }
+                    const savedLanguage = getSavedLanguage();
+                    loadTranslations(savedLanguage);  // Aplica las traducciones al nuevo contenido
                 }, 100);
             })
             .catch(error => console.error('Error loading component:', error));

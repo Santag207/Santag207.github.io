@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web Site</title>
-    <link rel="icon" href="img\black_5.png" type="image/x-icon">
+    <title id="page-title">Personal Web Site</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/home-styles.css">
     <link rel="stylesheet" href="css/navbar-styles.css">
     <link rel="stylesheet" href="css/footer-styles.css">
@@ -13,15 +13,19 @@
     <div id="navbar"></div>
     <main id="content" class="content-section slide-in"></main>
     <div id="footer"></div>
+
     <script src="javascript/utils.js"></script>
     <script src="javascript/components.js"></script>
+    <script src="javascript/language.js"></script>
     <script src="javascript/navbar.js"></script>
     <script src="javascript/home.js"></script>
     <script src="javascript/cv.js"></script>
     <script src="javascript/footer.js"></script>
     <script src="javascript/pruebas.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
             loadComponent('navbar', 'html/navbar.html');
             loadComponent('content', 'html/home.html');
             loadComponent('footer', 'html/footer.html');

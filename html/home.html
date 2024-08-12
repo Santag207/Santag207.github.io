@@ -1,34 +1,45 @@
-<div class="marquee">
-    <span>Welcome to my personal page, enjoy it and contact me if you like something here or have any work queries, have a nice day.</span>
-</div>
-
-<div class="home-content">
-    <h1 class="link">My Links</h1>
-    <div class="name">
-        <h1 class="name">Santiago Castro Zuluaga (Santag207)</h1>
-        <h2 class="career">Systems Engineer</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="../css/home-styles.css">
+</head>
+<body>
+    <div class="marquee">
+        <span id="welcome-message"></span>
     </div>
-    <div class="links">
 
-        <a href="https://github.com/Santag207">
-            <img src="../img/iconos/githublogo.png" class="git-icon">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/">
-            <img src="../img/iconos/linkedin-logo.png" class="linkeind-icon">
-            LinkedIn
-        </a>
-
-        <a href="mailto:castrosantiago476@gmail.com?subject=Hola%20Santiago&body=Hola%20Santag207,%20me%20gustaría%20ponerme%20en%20contacto%20contigo.">
-            <img src="../img/mail.png" class="mail-icon">
-            Mail
-        </a>
-
-        <a href="https://drive.google.com/file/d/1N07kwa2EAwIWuAPDruC98BnJhGv_iFx3/view?usp=sharing">
-            <img src="img/docs.png" class="pdf-icon">
-            PDF CV
-        </a>
-
+    <div class="home-content">
+        <h1 id="links-heading" class="link"></h1>
+        <div class="name">
+            <h1 id="name" class="name"></h1>
+            <h2 id="career" class="career"></h2>
+        </div>
+        <div class="links">
+            <a id="github-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="../img/iconos/githublogo.png" class="git-icon">
+                <span id="github-text"></span>
+            </a>
+            <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="../img/iconos/linkedin-logo.png" class="linkeind-icon">
+                <span id="linkedin-text"></span>
+            </a>
+            <a id="mail-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="../img/mail.png" class="mail-icon">
+                <span id="mail-text"></span>
+            </a>
+            <a id="pdf-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="../img/docs.png" class="pdf-icon">
+                <span id="pdf-text"></span>
+            </a>
+        </div>
     </div>
-</div>
+
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/components.js"></script>
+    <script src="../javascript/language.js"></script>
+    <script src="../javascript/home.js"></script>
+</body>
+</html>

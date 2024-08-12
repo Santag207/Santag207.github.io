@@ -1,13 +1,20 @@
 <div class="navbar-container">
     <div class="left-content">
         <img src="../img/navbar.png" alt="Logo" class="navbar-logo">
-        <h1>Santiago Castro</h1>
+        <h1 id="site-name"></h1>
     </div>
     <nav>
         <ul>
-            <li><a id="home-link" href="#" data-target="home">Home</a></li>
-            <li><a id="cv-link" href="#" data-target="cv">CV</a></li>
-            <li><a id="pruebas-link" href="#" data-target="pruebas">Pruebas</a></li>
+            <li><a id="home-link" href="../html/home.html" data-target="home"></a></li>
+            <li><a id="cv-link" href="../html/cv.html" data-target="cv"></a></li>
+            <li><a id="pruebas-link" href="../html/pruebas.html" data-target="pruebas"></a></li>
+            <li class="dropdown">
+                <a href="#" id="language-link"></a>
+                <div class="dropdown-content">
+                    <a href="#" id="english-link" data-lang="en"></a>
+                    <a href="#" id="spanish-link" data-lang="es"></a>
+                </div>
+            </li>
         </ul>
     </nav>
 </div>
