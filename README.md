@@ -97,6 +97,6 @@ This project is open-source and available under the MIT License.
 
 If you have any questions or need further information, please feel free to contact me at [castrosantiago476@gmail.com](mailto:castrosantiago476@gmail.com) or via [LinkedIn](https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/).
 
----
+-----
 
 © 2024 Santiago Castro Zuluaga
