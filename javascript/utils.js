@@ -12,7 +12,6 @@ function loadComponentWithAnimation(id, file) {
                     content.classList.remove('hidden');
                     content.classList.add('slide-in');
                     if (file.includes('home.html')) {
-                        initializeSpline();
                     }
                 }, 100);
             })

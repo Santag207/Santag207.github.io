@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.home-content {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 63vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.link {
+    position: absolute; 
+    top: 1px;
+    left: 70px;
+    text-align: left;
+    font-size: 20px;
+}
+.git {
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.career {
+    font-size: 25px;
+    font-weight: 300;
+    color: #888888;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 100%; 
+    padding: 80px;
+}
+
+.links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px;
+}
+
+.links img {
+    max-width: 50px; 
+    margin-bottom: 10px;
+}
+
+.git-icon {
+    filter: invert(100%);
+}

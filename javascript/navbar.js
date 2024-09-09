@@ -1,16 +1,27 @@
 function highlightActiveLink() {
-    const currentLocation = window.location.href;
     const navLinks = document.querySelectorAll('nav ul li a');
+    const currentLocation = window.location.href;
+    let homeLinkSet = false;
 
+    // Primero, elimina la clase 'active' de todos los enlaces
     navLinks.forEach(link => {
-        if (currentLocation.includes(link.getAttribute('href')) || 
-            (currentLocation.endsWith('#home') && link.getAttribute('data-target') === 'home') || 
-            (currentLocation.endsWith('#cv') && link.getAttribute('data-target') === 'cv') || 
-            (currentLocation.endsWith('#pruebas') && link.getAttribute('data-target') === 'pruebas') || 
-            (!window.location.hash && link.getAttribute('data-target') === 'home')) {
+        link.classList.remove('active');
+    });
+
+    // Ahora, verifica cuál debe estar activo
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        const target = link.getAttribute('data-target');
+
+        // Si no hay hash en la URL, activa el enlace de "Home"
+        if (!window.location.hash && target === 'home' && !homeLinkSet) {
             link.classList.add('active');
-        } else {
-            link.classList.remove('active');
+            homeLinkSet = true; // Asegúrate de que sólo se active una vez
+        }
+
+        // Si el hash coincide con el data-target del enlace, actívalo
+        if (window.location.hash === `#${target}`) {
+            link.classList.add('active');
         }
     });
 }
@@ -30,3 +41,17 @@ function addNavLinkListeners() {
         });
     });
 }
+
+function setActiveLink(activeLink) {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    activeLink.classList.add('active');
+}
+
+// Ejecuta al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+    highlightActiveLink();
+    addNavLinkListeners();
+});

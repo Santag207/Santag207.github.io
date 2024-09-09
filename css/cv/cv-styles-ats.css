@@ -8,17 +8,6 @@ body {
     color: #000000;
 }
 
-.navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 20px auto;
-    color: #000000;
-    font-family: 'Times New Roman', serif;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -106,10 +95,33 @@ ul {
     height: 150px;
 }
 
+.scv-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    padding-left: 30px; /* Espacio desde la izquierda */
+    margin: 20px 0;
+}
+
+.scv {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    padding-left: 160px;
+    margin-right: 20px; /* Espacio entre el título y los botones */
+}
+
 .style-buttons {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 23%;
+    background-color: #4CAF50;
+    padding: 10px 10px;
+    border-radius: 25px;
+    margin: 10px 30px;
+    width: auto;
+    max-width: 285px;
+    flex-wrap: wrap;
 }
 
 .style-buttons button {
@@ -121,7 +133,8 @@ ul {
     transition: all 0.3s ease;
     font-size: 15px;
     margin: 0 5px;
-    border-radius: 25px;
+    border-radius: 18px;
+    margin: 5px;
 }
 
 .style-buttons button:hover {
@@ -139,4 +152,44 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/* Para pantallas de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la disposición a una sola columna */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar ocupa todo el ancho */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .content {
+        width: 100%; /* El contenido principal ocupa todo el ancho */
+    }
+
+    .style-buttons {
+        width: 100%; /* La barra de botones ocupa todo el ancho */
+        justify-content: center; /* Centramos los botones */
+    }
+
+    .style-buttons button {
+        margin: 5px; /* Espaciado más ajustado para pantallas pequeñas */
+    }
+
+    .scv-container {
+        flex-direction: column; /* Coloca el título y los botones en columnas */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .scv {
+        margin-bottom: 10px; /* Espacio entre el título y los botones en móviles */
+        text-align: left; /* Centrar el texto */
+    }
+
+    .content h2 {
+        margin: 0;
+        text-align: center; /* Alinear el título del contenido */
+    }
 }
