@@ -5,17 +5,26 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+.title {
+    padding-top: 20px;
+    padding-left: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
 .home-content {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     min-height: 63vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Alinea los contenedores a los lados */
     align-items: center;
-    padding: 20px;
-    margin: 0;
-    flex-direction: column;
+    padding: 120px;
+    margin: 0 auto;
+    flex-direction: row; /* Mantiene los contenedores en una fila */
     overflow-x: hidden;
+    padding-top: 70px;
 }
 
 .link {
@@ -25,6 +34,7 @@ body {
     text-align: left;
     font-size: 20px;
 }
+
 .git {
     position: absolute; 
     top: 25px;
@@ -32,6 +42,7 @@ body {
     text-align: left;
     font-size: 20px;
 }
+
 .name {
     font-size: 30px;
     font-weight: 700;
@@ -41,32 +52,129 @@ body {
 .career {
     font-size: 25px;
     font-weight: 300;
-    color: #888888;
+    color: #ffffff;
     text-align: center;
 }
 
+/* Contenedor izquierdo para links */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    border: 5px solid #ffffff; /* Añade un borde sólido blanco */
+    color: #ffffff;
+}
+
+.left-container img {
+    border-radius: 10px;
+}
+
+/* Contenedor derecho para el GIF */
+.right-container {
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Ajusta los bordes redondeados */
+    border: 5px solid #ffffff; /* Añade un borde sólido blanco */
+    max-width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Añade una sombra más marcada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Contenedor de links */
 .links {
     display: flex;
-    justify-content: space-evenly; 
+    flex-direction: column;
     align-items: center;
-    width: 100%; 
-    padding: 80px;
+    margin-top: 20px;
+    width: 100%; /* Asegura que los links ocupen el ancho completo del contenedor */
 }
 
 .links a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Icono y texto en línea */
     align-items: center;
+    justify-content: flex-start; /* Alinea los iconos y texto desde la izquierda */
     text-decoration: none;
     color: inherit;
-    margin: 0 20px;
+    margin: 10px 0;
+    width: 60%; /* Ajusta el ancho para darle espacio y mantenerlo alineado */
 }
 
 .links img {
-    max-width: 50px; 
-    margin-bottom: 10px;
+    max-width: 50px;
+    margin-right: 10px;
 }
 
 .git-icon {
     filter: invert(100%);
+}
+
+/* Media Queries: Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .home-content {
+        justify-content: center;
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    .left-container, .right-container {
+        width: 80%; /* Los contenedores ocupan el 100% en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .right-container {
+        height: auto; /* Ajusta dinámicamente la altura del GIF */
+        width: 10%;
+        height: 60%;
+    }
+
+    .links a {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        justify-content: center; /* Centra el contenido en pantallas pequeñas */
+        text-align: center; /* Centra el texto e iconos */
+        flex-direction: column; /* Coloca el icono arriba del texto en pantallas pequeñas */
+    }
+}
+
+/* Media Queries: Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .home-content {
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    /* Cambiar el orden en pantallas pequeñas */
+    .left-container {
+        order: 2; /* Se mueve a la derecha */
+        width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .right-container {
+        order: 1; /* Se mueve a la izquierda */
+        width: 80%; /* Ajusta el ancho del GIF para pantallas pequeñas */
+        height: auto; /* Ajusta dinámicamente la altura del GIF */
+        margin-bottom: 20px;
+    }
+
+    .links a {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        justify-content: center; /* Centra el contenido en pantallas pequeñas */
+        text-align: center; /* Centra el texto e iconos */
+        flex-direction: column; /* Coloca el icono arriba del texto en pantallas pequeñas */
+    }
 }
