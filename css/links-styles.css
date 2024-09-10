@@ -5,14 +5,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.title {
-    padding-top: 20px;
-    padding-left: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-}
-
 .home-content {
     background-color: #ffffff;
     color: #000000;
@@ -27,19 +19,42 @@ body {
     padding-top: 70px;
 }
 
+.text-left-container {
+    width: 50%; /* El mismo ancho que el contenedor izquierdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
+
+
+.title {
+    width: 50%; /* Ajusta el ancho para alinearlo con el contenedor izquierdo */
+    text-align: center;
+    margin-bottom: 20px;
+    border: 5px solid #ffffff;
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7); /* Añade una sombra más marcada */
+}
+
 .link {
-    position: absolute; 
     top: 1px;
     left: 70px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .git {
-    position: absolute; 
     top: 25px;
     left: 20px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -62,7 +77,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    text-align: center;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     background-color: #000000;
@@ -126,47 +142,21 @@ body {
 /* Media Queries: Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
     .home-content {
+        flex-direction: column; /* Apila los contenedores en pantallas pequeñas */
         justify-content: center;
-        padding: 10px;
+        padding: 0px; /* Elimina el padding */
         padding-top: 50px;
+        max-width: 100%; /* Elimina el ancho fijo y usa el 100% */
     }
 
-    .left-container, .right-container {
-        width: 80%; /* Los contenedores ocupan el 100% en pantallas pequeñas */
-        margin-bottom: 20px;
-    }
-
-    .right-container {
-        height: auto; /* Ajusta dinámicamente la altura del GIF */
-        width: 10%;
-        height: 60%;
-    }
-
-    .links a {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-        justify-content: center; /* Centra el contenido en pantallas pequeñas */
-        text-align: center; /* Centra el texto e iconos */
-        flex-direction: column; /* Coloca el icono arriba del texto en pantallas pequeñas */
-    }
-}
-
-/* Media Queries: Adaptación para pantallas pequeñas */
-@media (max-width: 600px) {
-    .home-content {
-        padding: 10px;
-        padding-top: 50px;
-    }
-
-    /* Cambiar el orden en pantallas pequeñas */
+    /* Ajustes para los contenedores */
     .left-container {
-        order: 2; /* Se mueve a la derecha */
-        width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+        width: 100%; /* Contenedor de los links ocupa todo el ancho */
         margin-bottom: 20px;
     }
 
     .right-container {
-        order: 1; /* Se mueve a la izquierda */
-        width: 80%; /* Ajusta el ancho del GIF para pantallas pequeñas */
+        width: 100%; /* El contenedor del GIF también ocupa todo el ancho */
         height: auto; /* Ajusta dinámicamente la altura del GIF */
         margin-bottom: 20px;
     }
@@ -176,5 +166,18 @@ body {
         justify-content: center; /* Centra el contenido en pantallas pequeñas */
         text-align: center; /* Centra el texto e iconos */
         flex-direction: column; /* Coloca el icono arriba del texto en pantallas pequeñas */
+    }
+
+    .text-left-container {
+        width: 90%; /* El mismo ancho que el contenedor izquierdo */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+        justify-content: center; /* Centra el contenido verticalmente */
+        text-align: center; 
+        box-sizing: border-box;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }

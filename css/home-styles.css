@@ -53,6 +53,11 @@ body {
     padding-top: 0px;
 }
 
+.portfolio-header img:hover {
+    transform: scale(1.2); /* Escala la tarjeta al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre la tarjeta */
+}
+
 .portfolio-description {
     font-size: 1.2em;
     margin-top: 10px;
@@ -221,6 +226,7 @@ body {
     display: flex;
     justify-content: space-between; /* Alinea el contenido de la tarjeta */
     align-items: center; /* Alinea verticalmente la imagen */
+    transition: transform 0.3s ease; /* Añade la transición para el efecto de escala */
 }
 
 /* Contenedor para el texto del proyecto */
@@ -248,6 +254,16 @@ body {
     width: 50px; /* Tamaño del icono */
     height: auto;
     border-radius: 5px; /* Opción para redondear un poco el icono si es necesario */
+}
+
+.project-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto de la tarjeta */
+}
+
+.project-card:hover {
+    transform: scale(1.2); /* Escala la tarjeta al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre la tarjeta */
 }
 
 /* Contenedor derecho con el GIF */
