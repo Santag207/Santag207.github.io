@@ -1,89 +1,78 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae</title>
-    <link id="cv-stylesheet" rel="stylesheet" href="../css/cv/cv-styles-dry-martini.css">
-</head>
-<body>
+<div class="cv-container reveal">
+    <header class="cv-header">
+        <div class="cv-title">
+            <h1 class="glitch-text">Santiago Castro Zuluaga</h1>
+            <p>System & Mechanical Engineering Specialist</p>
+        </div>
+        <div class="contact-info">
+            <p>Location: Bogotá, COL</p>
+            <p>Email: castrozsantiago@javeriana.edu.co</p>
+            <p>Phone: +57 3142710256</p>
+            <p>GitHub: Santag207</p>
+        </div>
+    </header>
 
-    <h2 class="scv">CV Styles</h2>
-    <div class="style-buttons">
+    <section class="cv-section">
+        <h2>Professional Profile</h2>
+        <p>Estudiante de Ingeniería de Sistemas e Ingeniería Mecánica con enfoque en soluciones computacionales, analítica de datos y optimización de procesos. Especializado en sistemas complejos, automatización, simulación y control aplicado a vehículos aéreos y robótica aeroespacial. Fundador de XAE y líder en capítulos estudiantiles IEEE.</p>
+    </section>
 
-        <button id="style1" onclick="changeStyle('../css/cv/cv-styles-dry-martini.css')">Style Dry Martini</button>
-        <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
-    </div>
-    <div id="content-container" class="container slide-in-up">
-        <aside class="sidebar">
-            <div class="photo">
-                <img src="../img/cv.jpeg" alt="Foto de perfil" class="photo">
+    <section class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="cv-item">
+            <h3>Xaverian Aerospace Engineering – Founder & President</h3>
+            <span class="date">JAN 2025 – PRESENT</span>
+            <p>Liderazgo de estrategia y gestión en investigación aeroespacial. Proyectos en computadoras de vuelo y control de drones (ROS2).</p>
+        </div>
+
+        <div class="cv-item">
+            <h3>IEEE AESS Javeriana – Chapter President</h3>
+            <span class="date">JAN 2025 – PRESENT</span>
+            <p>Diseño de actividades académicas sobre navegación, propulsión y control de vuelo.</p>
+        </div>
+
+        <div class="cv-item">
+            <h3>Azuca Café – Web Developer & Tech Manager</h3>
+            <span class="date">MAY 2022 – PRESENT</span>
+            <p>Diseño de plataforma web, automatización de ventas e integración de herramientas analíticas.</p>
+        </div>
+
+        <div class="cv-item">
+            <h3>VR Developer & AI Monitor – Pontificia Universidad Javeriana</h3>
+            <span class="date">JUL 2025 – PRESENT</span>
+            <p>Desarrollo de proyectos VR en Unity y soporte académico en Especialización de IA.</p>
+        </div>
+
+        <div class="cv-item">
+            <h3>JaVex Robotics – Logistics Leader & Pilot</h3>
+            <span class="date">MAR 2024 – MAY 2025</span>
+            <p>Gestión logística con SCRUM y pilotaje de competencia en VEX Robotics.</p>
+        </div>
+    </section>
+
+    <div class="cv-grid">
+        <section class="cv-section">
+            <h2>Education</h2>
+            <div class="cv-item">
+                <h3>Ingeniería Mecánica</h3>
+                <p class="institution">P. Universidad Javeriana | 2025 - Present</p>
             </div>
-            <h1><span class="name-text">Santiago Castro Zuluaga</span></h1>
-            <p><span class="career-text">System Engineering Student</span></p>
-            <section class="contact">
-                <h2>Contact</h2>
+            <div class="cv-item">
+                <h3>Ingeniería de Sistemas</h3>
+                <p class="institution">P. Universidad Javeriana | 2022 - Present</p>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Technical Skills</h2>
+            <div class="cv-item">
                 <ul>
-                    <li>🏠 Bogota, Colombia</li>
-                    <li>🌐 <a href="https://github.com/Santag207" target="_blank">GitHub: Santag207 (Link)</a></li>
-                    <li><a href="mailto:castrosantiago476@gmail.com?subject=Hola%20Santiago&body=Hola%20Santag207,%20me%20gustaría%20ponerme%20en%20contacto%20contigo." target="_blank">📧 castrosantiago476@gmail.com (Link)</a></li>
-                    <li><a href="mailto:castrozsantiago@javeriana.edu.co?subject=Hola%20Santiago&body=Hola%20Santag207,%20me%20gustaría%20ponerme%20en%20contacto%20contigo." target="_blank">📧 castrozsantiago@javeriana.edu.co (Link)</a></li>
-                    <li>👨‍💻 <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">LinkedIn (Link)</a></li>
-                    <li>📞 3142710256</li>
+                    <li>Languages: C++, Python, HTML, CSS, SQL, Java, Dart, C#</li>
+                    <li>Tools: Git, SolidWorks, Unity VR, ROS2, Android Studio</li>
+                    <li>Leadership: Strategic Planning, Project Management, Agile</li>
                 </ul>
-            </section>
-            <section class="education">
-                <h2>Education</h2>
-                <div class="edu-item">
-                    <h3>high school certificate</h3>
-                    <p>2007 - 2020<br>Minuto de Dios</p>
-                </div>
-                <div class="edu-item">
-                    <h3>Systems engineering degree</h3>
-                    <p>2022 - Now<br>Pontifical Javeriana University</p>
-                    <p>Studying sixth semester of degree</p>
-                </div>
-            </section>
-            <section class="languages">
-                <h2>Languages</h2>
-                <ul>
-                    <li>Español (C2)</li>
-                    <li>Inglés (B2)</li>
-                    <li>Italian (A2)</li>
-                </ul>
-            </section>
-        </aside>
-        <main class="content">
-            <section class="profile">
-                <h2>Profile</h2>
-                <p>I am a passionate and creative System Engineering student currently in my sixth semester. I excel in teamwork and am known for my flexibility and eagerness to learn new technologies and methodologies. My experience in programming has enabled me to develop innovative and efficient solutions, and I am always looking for opportunities to improve and complement my existing knowledge. I am committed to continuous growth and excellence in my field. I also have a strong affinity for data management and a quick learning ability in any environment.</p>
-            </section>
-            <section class="experience">
-                <h2>Experiencia</h2>
-                <div class="job">
-                    <h3>Internships in independent companies</h3>
-                    <p>Azucafe | 2022 - Now</p>
-                    <p>Development of a complete website, organization of processes, accounting management and database maintenance.</p>
-                </div>
-                <div class="job">
-                    <h3>Participation in Javex Hotbed </h3>
-                    <p>Javex Robotics (PujVex) | 2024 - Now</p>
-                    <p>Member of the logistics division with database and resource management.</p>
-                </div>
-            </section>
-            <section class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Communication</li>
-                    <li>Creativity</li>
-                    <li>Teamwork</li>
-                    <li>Organization</li>
-                    <li>Project management and assistance</li>
-                    <li>Kind and understanding</li>
-                </ul>
-            </section>
-        </main>
+            </div>
+        </section>
     </div>
-    <script src="../javascript/cv.js"></script>
-</body>
-</html>
+</div>

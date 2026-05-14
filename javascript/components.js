@@ -27,6 +27,11 @@ function loadComponent(id, file) {
                 setTimeout(() => {
                     content.classList.remove('hidden');
                     content.classList.add('slide-in');
+
+                    // Re-initialize scroll animations for new content
+                    if (typeof initScrollAnimations === 'function') {
+                        initScrollAnimations();
+                    }
                 }, 100);
             }, 500); // Tiempo para la animación de salida
         })
