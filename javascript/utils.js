@@ -14,6 +14,11 @@ function loadComponentWithAnimation(id, file) {
                     if (typeof initScrollAnimations === 'function') {
                         initScrollAnimations();
                     }
+
+                    // Initialize CV component if loaded
+                    if (file.includes('cv.html') && typeof window.initCVComponent === 'function') {
+                        window.initCVComponent();
+                    }
                 }, 100);
             })
             .catch(error => console.error('Error loading component:', error));
