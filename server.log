@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1329, in <module>
+    test(
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1276, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1323, in server_bind
+    return super().server_bind()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /css/footer-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /css/home-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/components.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/language.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/utils.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /css/navbar-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/navbar.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/cv.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/home.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/footer.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /javascript/pruebas.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /html/footer.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /html/navbar.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /html/home.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /languages/navbar/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/iconos/githublogo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] code 404, message File not found
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /languages/footer/en.json HTTP/1.1" 404 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/iconos/linkedin-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/iconos/stack_overflow_icon.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/iconos/instagram-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /languages/home/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/docs.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/navbar.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:45:34] "GET /img/mail.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /css/home-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /css/navbar-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /css/footer-styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/language.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/utils.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/components.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/navbar.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/home.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/pruebas.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/footer.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /javascript/cv.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /html/navbar.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /html/home.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /html/footer.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /languages/navbar/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/navbar.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /languages/home/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] code 404, message File not found
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /languages/footer/en.json HTTP/1.1" 404 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/iconos/githublogo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/iconos/linkedin-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/mail.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/docs.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/iconos/stack_overflow_icon.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:29] "GET /img/iconos/instagram-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:31] "GET /html/cv.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:31] "GET /languages/cv/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:36] "GET /languages/navbar/es.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:36] "GET /languages/index/es.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:38] "GET /languages/navbar/ja.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:38] "GET /languages/index/ja.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2026 19:46:41] "GET /languages/home/ja.json HTTP/1.1" 200 -

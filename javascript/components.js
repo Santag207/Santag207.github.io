@@ -1,4 +1,5 @@
 function loadComponent(id, file) {
+    console.log(`Loading component: ${id} from ${file}`);
     return fetch(file)
         .then(response => {
             if (!response.ok) {
@@ -7,22 +8,37 @@ function loadComponent(id, file) {
             return response.text();
         })
         .then(data => {
-            const content = document.getElementById(id);
-            if (content) {
-                content.classList.remove('slide-in');
-                content.classList.add('slide-out');
-                setTimeout(() => {
-                    content.innerHTML = data;
-                    content.classList.remove('slide-out');
-                    content.classList.add('hidden');
-                    setTimeout(() => {
-                        content.classList.remove('hidden');
-                        content.classList.add('slide-in');
-                    }, 100);
+            const container = document.getElementById(id);
+            if (container) {
+                // Si el archivo es un documento HTML completo, extraemos solo el contenido relevante
+                if (data.includes('<main') && data.includes('</main>')) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+                    const mainContent = doc.querySelector('main');
+                    if (mainContent) {
+                        container.innerHTML = mainContent.innerHTML;
+                    } else {
+                        container.innerHTML = data;
+                    }
+                } else {
+                    container.innerHTML = data;
+                }
 
-                    const savedLanguage = getSavedLanguage();
-                    loadTranslations(savedLanguage);  // Aplica las traducciones al nuevo contenido
-                }, 500);
+                const savedLanguage = getSavedLanguage();
+
+                // Determinar qué sección cargar basándonos en el nombre del archivo
+                let section = file.split('/').pop().split('.').shift();
+
+                // Mapear nombres de archivo a secciones de traducción si es necesario
+                if (section === 'navbar' || section === 'footer' || section === 'home' || section === 'cv' || section === 'pruebas') {
+                    loadSectionTranslations(savedLanguage, section);
+                }
+
+                if (id === 'navbar') {
+                    setupLanguageListeners();
+                    highlightActiveLink();
+                    addNavLinkListeners();
+                }
             } else {
                 console.error(`El elemento con id "${id}" no se encontró en el DOM.`);
             }

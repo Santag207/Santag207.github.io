@@ -1,123 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="cvTitle"></title>
-    <link rel="icon" href="../img/icon.png" type="image/x-icon">
-    <link id="cv-stylesheet" rel="stylesheet" href="../css/cv/cv-styles-dry-martini.css">
-    <link rel="stylesheet" href="../css/navbar-styles.css">
-    <link rel="stylesheet" href="../css/footer-styles.css">
-</head>
-<body>
-    <div id="navbar"></div>
-    <main id="content" class="content-section slide-in">
-        <div class="style-buttons">
-             <button id="style1" onclick="changeStyle('../css/cv/cv-styles-dry-martini.css')">Style Dry Martini</button>
-            <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
-            <button id="style3" onclick="changeStyle('../css/cv/cv-styles-police.css')">Style Police</button>
-            <button id="style4" onclick="changeStyle('../css/cv/cv-styles-calypso.css')">Style Calypso</button>
+<div class="style-buttons">
+    <button id="style1" onclick="changeStyle('../css/cv/cv-styles-dry-martini.css')">Style Dry Martini</button>
+    <button id="style2" onclick="changeStyle('../css/cv/cv-styles-ats.css')">Style ATS</button>
+    <button id="style3" onclick="changeStyle('../css/cv/cv-styles-police.css')">Style Police</button>
+    <button id="style4" onclick="changeStyle('../css/cv/cv-styles-calypso.css')">Style Calypso</button>
+</div>
+
+<div id="content-container" class="container slide-in-up">
+    <aside class="sidebar">
+        <div class="photo">
+            <img src="../img/cv.jpeg" alt="Profile Photo" class="photo">
         </div>
-        <div id="content-container" class="container slide-in-up">
-            <aside class="sidebar">
-                <div class="photo">
-                    <img src="../img/cv.jpeg" alt="Profile Photo" class="photo">
+        <h1><span id="name" class="name-text"></span></h1>
+        <p><span id="career" class="career-text"></span></p>
+
+        <section id="contact" class="contact">
+            <h2 id="contactHeading"></h2>
+            <ul>
+                <li>🏠 <a id="address"></a></li>
+                <li>🌐 <a id="githubLink" href="https://github.com/Santag207" target="_blank" rel="noopener noreferrer"></a></li>
+                <li>📧 <a id="email1"></a></li>
+                <li>📧 <a id="email2"></a></li>
+                <li>👨‍💻 <a id="linkedinLink" href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li>📞 <a id="phone"></a> </li>
+            </ul>
+        </section>
+
+        <section id="education" class="education">
+            <h2 id="educationHeading"></h2>
+            <div class="edu-item">
+                <h3 id="highSchool"></h3>
+                <div class="degree-container">
+                    <p id="highSchoolYears"></p>
+                    <p id="highSchoolDetails" class="details"></p>
                 </div>
-                <h1><span id="name" class="name-text"></span></h1>
-                <p><span id="career" class="career-text"></span></p>
-                <section id="contact" class="contact">
-                    <h2 id="contactHeading"></h2>
-                    <ul>
-                        <li>🏠 <a id="address"></a></li>
-                        <li>🌐 <a id="githubLink" href="https://github.com/Santag207" target="_blank" rel="noopener noreferrer"></a></li>
-                        <li>📧 <a id="email1"></a></li>
-                        <li>📧 <a id="email2"></a></li>
-                        <li>👨‍💻 <a id="linkedinLink" href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank" rel="noopener noreferrer"></a></li>
-                        <li>📞 <a id="phone"></a> </li>
-                    </ul>
-                </section>
-                <section id="education" class="education">
-                    <h2 id="educationHeading"></h2>
-                    <div class="edu-item">
-                        <h3 id="highSchool"></h3>
-                        <div class="degree-container">
-                            <p id="highSchoolYears"></p>
-                            <p id="highSchoolDetails" class="details"></p>
-                        </div>
-                    </div>
-                    <div class="edu-item">
-                        <h3 id="degree"></h3>
-                        <div class="degree-container">
-                            <p id="degreeYears"></p>
-                            <p id="degreeDetails" class="details"></p>
-                        </div>
-                        <p id="degreeStatus"></p>
-                    </div>
-                </section>
-                <section id="languages-section" class="languages">
-                    <h2 id="languagesHeading"></h2>
-                    <ul>
-                        <li id="spanish"></li>
-                        <li id="english"></li>
-                        <li id="italian"></li>
-                    </ul>
-                </section>
-            </aside>
-            <main class="content">
-                <section id="profile" class="profile">
-                    <h2 id="profileHeading"></h2>
-                    <p id="profileDescription"></p>
-                </section>
-                <section id="experience" class="experience">
-                    <h2 id="experienceHeading"></h2>
-                    <div class="job">
-                        <h3 id="job1Title"></h3>
-                        <p id="job1Company"></p>
-                        <p id="job1Description"></p>
-                    </div>
-                    <div class="job">
-                        <h3 id="job2Title"></h3>
-                        <p id="job2Vompany"></p>
-                        <p id="job2Description"></p>
-                    </div>
-                </section>
-                <section id="skills" class="skills">
-                    <h2 id="skillsHeading"></h2>
-                    <ul>
-                        <li id="skill1"></li>
-                        <li id="skill2"></li>
-                        <li id="skill3"></li>
-                        <li id="skill4"></li>
-                        <li id="skill5"></li>
-                        <li id="skill6"></li>
-                    </ul>
-                </section>
             </div>
-        </main>
-    <div id="footer"></div>
+            <div class="edu-item">
+                <h3 id="degree"></h3>
+                <div class="degree-container">
+                    <p id="degreeYears"></p>
+                    <p id="degreeDetails" class="details"></p>
+                </div>
+                <p id="degreeStatus"></p>
+            </div>
+        </section>
 
-    <script src="../javascript/utils.js"></script>
-    <script src="../javascript/components.js"></script>
-    <script src="../javascript/language.js"></script>
-    <script src="../javascript/navbar.js"></script>
-    <script src="../javascript/cv.js"></script>
-    <script src="../javascript/footer.js"></script>
+        <section id="languages-section" class="languages">
+            <h2 id="languagesHeading"></h2>
+            <ul>
+                <li id="spanish"></li>
+                <li id="english"></li>
+                <li id="italian"></li>
+            </ul>
+        </section>
+    </aside>
 
+    <main class="content">
+        <!-- Header with Typing SVGs and NASA Image -->
+        <table width="100%" style="margin-bottom: 20px; background: rgba(0,0,0,0.2); border-radius: 10px; overflow: hidden;">
+          <tr>
+            <td width="40%" align="center">
+              <img src="https://images-assets.nasa.gov/image/sts096-707-039/sts096-707-039~orig.jpg" width="100%" style="display: block; object-fit: cover;">
+            </td>
+            <td width="60%" align="center" style="padding: 10px;">
+              <img src="https://readme-typing-svg.herokuapp.com?&font=Minecraft&color=00AA00&size=25&lines=Hey;Welcome+To+My+Profile" alt="Typing SVG 1" />
+              <br>
+              <img src="https://readme-typing-svg.herokuapp.com?&font=Minecraft&color=FF7F3E&size=25&lines=My+Name+is+Santiago;I'm+Engineering+student;" alt="Typing SVG 2" />
+            </td>
+          </tr>
+        </table>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-            loadComponent('navbar', '../html/navbar.html');
-            loadComponent('footer', '../html/footer.html');
-            setMarqueeSpeed(20);
-        });
+        <section id="profile" class="profile">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzI2dXYwbHFhNW5idGhmMXFxbHNjdDF6aXI1NDFpN3Zrb2xmOGl4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VTtANKl0beDFQRLDTh/giphy.webp?raw=true" width="40" alt="About Me GIF">
+                <h2 id="profileHeading" style="margin: 0;"></h2>
+            </div>
+            <div style="display: flex; align-items: flex-start;">
+                <p id="profileDescription" style="flex: 1;"></p>
+                <img width="150" alt="NASA Space" src="https://images-assets.nasa.gov/image/0400388/0400388~orig.jpg" style="margin-left: 20px; border-radius: 5px; border: 1px solid #ccc;"/>
+            </div>
+        </section>
 
-        function setMarqueeSpeed(speed) {
-            const marquee = document.querySelector('.marquee');
-            if (marquee) {
-                marquee.style.animationDuration = `${speed}s`;
-            }
-        }
-    </script>
-</body>
-</html>
+        <section id="summary-others" class="summary">
+            <h2 id="summaryHeading"></h2>
+            <div style="display: flex; align-items: flex-start;">
+                <div style="flex: 1;">
+                    <ul id="summaryList" style="list-style-type: none; padding: 0;">
+                        <li id="summary-item-1" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-2" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-3" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-4" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-5" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-6" style="margin-bottom: 10px;"></li>
+                        <li id="summary-item-7" style="margin-bottom: 10px;"></li>
+                    </ul>
+                </div>
+                <img width="150" alt="Saturn V" src="https://c.tenor.com/lZE8tZGKLQ4AAAAi/saturn-v-space.gif" style="margin-left: 20px;"/>
+            </div>
+        </section>
+
+        <section id="social-media" class="social">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif?raw=true" width="60" alt="Social Media GIF">
+                <h2 id="socialHeading" style="margin: 0;"></h2>
+            </div>
+            <p id="socialText"></p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a href="https://www.linkedin.com/in/santiago-castro-zuluaga-9959bb252/" target="_blank">
+                    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+                </a>
+                <a href="https://stackoverflow.com/users/25487587/santiago-castro-zuluaga" target="_blank">
+                    <img alt="Stack Overflow" src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white">
+                </a>
+                <a href="https://www.paypal.com/invoice/p/#B2GB5WB662VATB3W" target="_blank">
+                    <img src="https://img.shields.io/badge/Paypal-00457C?color=00457C&style=for-the-badge&logo=Paypal&logoColor=white">
+                </a>
+            </div>
+        </section>
+
+        <section id="programming-knowledge" class="programming">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                <img src="https://media.tenor.com/5ry-200hErMAAAAM/hacker-hacker-man.gif" width="40" alt="Hacker GIF">
+                <h2 id="programmingHeading" style="margin: 0;"></h2>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/IDEs.gif?raw=true" width="30" alt="IDEs GIF">
+                <h3 id="idesHeading" style="margin: 0;"></h3>
+            </div>
+            <div align="left" style="user-select: none; margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 12px;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="40" alt="qtcreator logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height="40" alt="androidstudio logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height="40" alt="pycharm logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="40" alt="intellij logo" />
+              <img src="https://skillicons.dev/icons?i=eclipse" height="40" alt="eclipseide logo" />
+              <img src="https://cdn.simpleicons.org/replit/F26207" height="40" alt="replit logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="40" alt="matlab logo" />
+              <img src="https://cdn.simpleicons.org/arduino/00979D" height="40" alt="arduino logo" />
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?raw=true" width="25" alt="Language GIF">
+                <h3 id="languageTechHeading" style="margin: 0;"></h3>
+            </div>
+            <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;">
+                <img alt="C++" src="https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white">
+                <img alt="Python" src="https://img.shields.io/badge/-Python-000000?style=flat&logo=python">
+                <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-0076A8?style=flat&logo=mathworks&logoColor=white">
+                <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff">
+                <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3">
+                <img alt="Dart" src="https://img.shields.io/badge/-Dart-000000?style=flat&logo=Dart&logoColor=ffffff&labelColor=%23007acc&color=%23007acc">
+                <img alt="Kotlin" src="https://img.shields.io/badge/-Kotlin-000000?style=flat&logo=Kotlin">
+                <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23FFCE5A&color=%23FFCE5A">
+                <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript&logoColor=007ACC">
+                <img alt="SQL" src="https://img.shields.io/badge/-SQL-000000?style=flat&logo=MySQL&logoColor=ffffff&logoColor=23007acc">
+                <img alt="Java" src="http://img.shields.io/badge/-Java-5B4638?style=flat-square&logo=java&logoColor=ffffff">
+                <img alt="C#" src="https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white">
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://i.pinimg.com/originals/57/18/5d/57185d2176d7cbaebdb74c00ce1b9ebf.gif?raw=true" width="40" alt="Tools GIF">
+                <h3 id="toolsHeading" style="margin: 0;"></h3>
+            </div>
+            <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;">
+                <img alt="Git" src="https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff">
+                <img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github">
+                <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white">
+                <img alt="Docker" src="https://img.shields.io/badge/-Docker-000?&logo=Docker">
+                <img alt="Firebase" src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=000000">
+                <img alt="Flutter" src="https://img.shields.io/badge/-Flutter-000?&logo=Flutter">
+                <img alt="Angular" src="https://img.shields.io/badge/-Angular-000000?style=flat&logo=Angular&logoColor=000000&labelColor=ff0000&color=ff0000">
+                <img src="https://img.shields.io/badge/-R-000000?style=flat&logo=R&labelColor=276DC3&color=276DC3&logoColor=ffffff">
+                <img src="https://img.shields.io/badge/-R%20Studio-000000?style=flat&logo=RStudio&labelColor=75AADB&color=75AADB&logoColor=ffffff">
+                <img src="https://img.shields.io/badge/-Power%20BI-000000?style=flat&logo=Power%20BI&labelColor=F2C811&color=F2C811&logoColor=000000">
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://i.makeagif.com/media/12-28-2024/6D_y1N.gif" width="60" alt="Others GIF">
+                <h3 id="othersHeading" style="margin: 0;"></h3>
+            </div>
+            <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black">
+                <img alt="SolidWorks" src="https://img.shields.io/badge/SolidWorks-E2231A?style=flat-square&logo=dassaultsystemes&logoColor=white">
+                <img alt="Visual Paradigm" src="https://img.shields.io/badge/Visual%20Paradigm-1F8ACB?style=flat-square">
+                <img alt="Unity" src="https://img.shields.io/badge/Unity-100000?logo=unity&logoColor=white&style=flat-square">
+                <img alt="Unity VR" src="https://img.shields.io/badge/Unity%20VR-100000?logo=unity&logoColor=white&style=flat-square">
+                <img alt="PuTTY" src="https://img.shields.io/badge/PuTTY-000000?style=flat-square">
+                <img alt="com0com" src="https://img.shields.io/badge/com0com-808080?style=flat-square">
+                <img alt="ANSYS" src="https://img.shields.io/badge/ANSYS-FFB71B?style=flat-square&logo=ansys&logoColor=black">
+                <img alt="Autodesk Fusion" src="https://img.shields.io/badge/Autodesk%20Fusion-FF6F00?style=flat-square&logo=autodesk&logoColor=white">
+                <img alt="Excel" src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white">
+                <img alt="Mastercam" src="https://img.shields.io/badge/Mastercam-00599C?style=flat-square">
+            </div>
+        </section>
+
+        <section id="stats" class="stats">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif?raw=true" width="40" alt="Stats GIF">
+                <h2 id="statsHeading" style="margin: 0;"></h2>
+            </div>
+            <div align="center">
+              <img src="https://streak-stats.demolab.com?user=santag207&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" style="margin-bottom: 10px;"/>
+              <br>
+              <img src="https://github-readme-stats.vercel.app/api?username=santag207&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=gruvbox&locale=en&hide_border=false" height="150" alt="stats graph"/>
+              <img src="https://github-readme-stats.vercel.app/api/top-langs?username=santag207&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=gruvbox&hide_border=false" height="150" alt="languages graph"/>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2 id="experienceHeading"></h2>
+            <div class="job">
+                <h3 id="job1Title"></h3>
+                <p id="job1Company"></p>
+                <p id="job1Description"></p>
+            </div>
+            <div class="job">
+                <h3 id="job2Title"></h3>
+                <p id="job2Company"></p>
+                <p id="job2Description"></p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 id="skillsHeading"></h2>
+            <ul>
+                <li id="skill1"></li>
+                <li id="skill2"></li>
+                <li id="skill3"></li>
+                <li id="skill4"></li>
+                <li id="skill5"></li>
+                <li id="skill6"></li>
+            </ul>
+        </section>
+    </main>
+</div>
