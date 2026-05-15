@@ -1,3 +1,31 @@
+.solidworks-media-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solidworks-hover-video {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    border: 2px solid var(--accent-orange, #FFD700);
+    background: #111;
+    pointer-events: none;
+    z-index: 2;
+}
+.solidworks-media-wrapper:hover .solidworks-hover-video {
+    display: block;
+}
+.solidworks-media-wrapper:hover .solidworks-icon {
+    opacity: 0;
+}
 /* Modular CV Layout */
 
 .tech-grid-modular {
@@ -116,6 +144,16 @@
 
 .cv-detail-window.active {
     display: block;
+}
+
+/* Video hover SolidWorks */
+.solidworks-hover-video {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    border: 2px solid var(--accent-orange, #FFD700);
+    background: #111;
+    pointer-events: none;
+    transition: opacity 0.2s;
 }
 
 .cv-detail-window h4 {

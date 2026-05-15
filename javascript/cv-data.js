@@ -83,13 +83,13 @@ const cvData = {
     "Qt Creator": {
         "description": "Desarrollo de interfaces gráficas para aplicaciones C++.",
         "projects": ["GUI de control de sensores"],
-        "media": "https://upload.wikimedia.org/wikipedia/commons/1/17/Qt_logo_2016.svg",
+        "media": "img/iconos/CV/Qt_logo_neon_2022.svg.png",
         "type": "ide"
     },
     "Android Studio": {
         "description": "Entorno oficial para desarrollo Android.",
         "projects": ["App móvil nativa"],
-        "media": "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg",
+        "media": "img/iconos/CV/Android_Studio_icon_(2023).svg.png",
         "type": "ide"
     },
     "Arduino IDE": {
