@@ -23,11 +23,21 @@ function initCVInteractions() {
                     </div>`;
                 }
 
+                let mediaHTML = '';
+                if (data.media) {
+                    const isVideo = data.media.match(/\.(mp4|webm|ogg)$/i);
+                    if (isVideo) {
+                        mediaHTML = `<video src="${data.media}" class="cv-detail-media" autoplay loop muted playsinline></video>`;
+                    } else {
+                        mediaHTML = `<img src="${data.media}" class="cv-detail-media" alt="${name} detail">`;
+                    }
+                }
+
                 detailWindow.innerHTML = `
                     <h4>${name}</h4>
                     <p>${data.description}</p>
                     ${projectsHTML}
-                    ${data.media ? `<img src="${data.media}" class="cv-detail-media" alt="${name} detail">` : ''}
+                    ${mediaHTML}
                 `;
                 detailWindow.classList.add('active');
             }

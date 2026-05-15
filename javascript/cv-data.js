@@ -169,7 +169,7 @@ const cvData = {
     "Power BI": {
         "description": "Análisis de negocios y visualización de datos.",
         "projects": ["Reportes de eficiencia operativa"],
-        "media": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_BI_Logo.svg",
+        "media": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/powerbi.svg",
         "type": "tool"
     },
     "R": {
@@ -189,31 +189,31 @@ const cvData = {
     "SolidWorks": {
         "description": "Diseño mecánico y modelado CAD 3D.",
         "projects": ["Estructura de mini-cohete", "Chasis para robot VEX"],
-        "media": "https://upload.wikimedia.org/wikipedia/commons/1/12/SolidWorks_Logo.svg",
+        "media": "https://cdn.worldvectorlogo.com/logos/solidworks.svg",
         "type": "engineering"
     },
     "ANSYS": {
         "description": "Simulación de ingeniería y análisis por elementos finitos.",
         "projects": ["Análisis estructural de alerones", "Simulación térmica"],
-        "media": "https://upload.wikimedia.org/wikipedia/commons/0/0e/ANSYS_logo.svg",
+        "media": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ansys.svg",
         "type": "engineering"
     },
     "Autodesk Fusion": {
         "description": "Herramienta integrada de CAD, CAM y CAE.",
         "projects": ["Prototipado rápido", "Modelado de componentes"],
-        "media": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Autodesk_Fusion_360_logo.svg",
+        "media": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/autodesk.svg",
         "type": "engineering"
     },
     "Mastercam": {
         "description": "Software CAD/CAM para manufactura.",
         "projects": ["Programación de mecanizado CNC"],
-        "media": "img/iconos/generic-tech.png",
+        "media": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/industry.svg",
         "type": "engineering"
     },
-    "CFD": {
+    "CFD Simulation": {
         "description": "Mecánica de fluidos computacional para análisis aerodinámico.",
         "projects": ["Optimización de perfiles alares", "Flujo en toberas"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/CFD_Sim.gif",
+        "media": "https://media.giphy.com/media/3o7TKMGpxx6rQ/giphy.mp4",
         "type": "engineering"
     },
     "Unity": {
@@ -221,6 +221,36 @@ const cvData = {
         "projects": ["Simulador de vuelo VR", "Entorno de entrenamiento robótico"],
         "media": "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg",
         "type": "game_dev"
+    },
+    "Unity VR": {
+        "description": "Creación de experiencias inmersivas y simulaciones de realidad virtual.",
+        "projects": ["Simulador de entrenamiento", "Visualización de datos 3D"],
+        "media": "https://media.giphy.com/media/3o7TKSjP3tH900N0W4/giphy.mp4",
+        "type": "game_dev"
+    },
+    "PuTTY": {
+        "description": "Cliente SSH y telnet para administración remota.",
+        "projects": ["Acceso a servidores XAE", "Configuración de red"],
+        "media": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/terminal.svg",
+        "type": "tool"
+    },
+    "com0com": {
+        "description": "Emulador de puerto serie de módem nulo para Windows.",
+        "projects": ["Pruebas de comunicación serie", "Simulación de hardware"],
+        "media": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/plug.svg",
+        "type": "tool"
+    },
+    "Visual Paradigm": {
+        "description": "Herramienta de diseño de sistemas y modelado UML.",
+        "projects": ["Arquitectura de software XAE", "Diagramas de flujo de procesos"],
+        "media": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualparadigm.svg",
+        "type": "tool"
+    },
+    "Excel": {
+        "description": "Hoja de cálculo para análisis de datos y organización.",
+        "projects": ["Gestión de inventario", "Cálculos de ingeniería"],
+        "media": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoftexcel.svg",
+        "type": "tool"
     },
     "Linux": {
         "description": "Sistema operativo para desarrollo y servidores.",
@@ -233,31 +263,31 @@ const cvData = {
     "Aerospace Engineering": {
         "description": "Diseño y desarrollo de aeronaves y naves espaciales.",
         "projects": ["Mini-lanzadores suborbitales", "Cargas útiles"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/Aerospace.gif",
+        "media": "https://media.giphy.com/media/3o7TKX7p1x8x5X/giphy.mp4",
         "type": "interest"
     },
     "Rocket Science": {
         "description": "Propulsión, balística y dinámica de vuelo orbital.",
         "projects": ["Modelado de motores de combustible sólido"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/Rocketry.gif",
+        "media": "https://media.giphy.com/media/3o7TKMGpxx6rQ/giphy.mp4",
         "type": "interest"
     },
     "Avionics Systems": {
         "description": "Sistemas electrónicos integrados en plataformas aeroespaciales.",
         "projects": ["Sistemas de telemetría en tiempo real"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/Avionics.gif",
+        "media": "https://media.giphy.com/media/3o7TKVun7W6Y5L/giphy.mp4",
         "type": "interest"
     },
     "Sensor Integration": {
         "description": "Fusión de datos y acoplamiento de hardware sensorial.",
         "projects": ["IMU/GPS Kalman Filtering"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/Sensors.gif",
+        "media": "https://media.giphy.com/media/3o7TKUsqD3x4xS/giphy.mp4",
         "type": "interest"
     },
     "Control Systems": {
         "description": "Teoría de control y retroalimentación para estabilidad.",
         "projects": ["Control PID para estabilización de empuje"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl2NmN6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Z2Z6Jm09MQ/Control.gif",
+        "media": "https://media.giphy.com/media/3o7TKVun7W6Y5L/giphy.mp4",
         "type": "interest"
     },
     "Computational Physics": {
