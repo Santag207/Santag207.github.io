@@ -271,6 +271,144 @@ const cvData = {
         "projects": ["Predicción de trayectorias", "Clasificación de señales"],
         "media": "https://i.pinimg.com/originals/f9/a8/73/f9a8736c48cdaf40d3b9c1721c6f5161.gif",
         "type": "interest"
+    },
+    "LaTeX": {
+        "description": "Sistema de composición de textos de alta calidad para documentos científicos.",
+        "projects": ["Documentación técnica XAE", "Artículos de investigación"],
+        "media": "https://miro.medium.com/v2/resize:fit:1200/1*m9eS1W6N9eG-8rN_v_0Q9Q.gif",
+        "type": "tool"
+    },
+    "MySQL": {
+        "description": "Sistema de gestión de bases de datos relacionales de código abierto.",
+        "projects": ["Backend de aplicaciones web", "Sistemas de inventario"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/l41lTfN3jK4lU1l6s/giphy.gif",
+        "type": "database"
+    },
+    "PostgreSQL": {
+        "description": "Base de datos relacional orientada a objetos potente y escalable.",
+        "projects": ["Análisis de datos complejos", "Geolocalización"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "database"
+    },
+    "SQLite": {
+        "description": "Motor de base de datos SQL ligero y autónomo.",
+        "projects": ["Almacenamiento local en apps móviles", "Prototipos rápidos"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKVUn7iM8FMEU24/giphy.gif",
+        "type": "database"
+    },
+    "MongoDB": {
+        "description": "Base de datos NoSQL orientada a documentos.",
+        "projects": ["Gestión de contenido dinámico", "Big Data"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/l41lTfN3jK4lU1l6s/giphy.gif",
+        "type": "database"
+    },
+    "H2 Database": {
+        "description": "Base de datos relacional rápida escrita en Java.",
+        "projects": ["Pruebas unitarias", "Bases de datos embebidas"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "database"
+    },
+    "Windows": {
+        "description": "Sistema operativo principal para entornos corporativos y gaming.",
+        "projects": ["Estaciones de diseño CAD", "Desarrollo .NET"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "os"
+    },
+    "Unity VR": {
+        "description": "Desarrollo de experiencias inmersivas de Realidad Virtual.",
+        "projects": ["Simuladores de entrenamiento", "Visualización 3D"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "game_dev"
+    },
+    "PuTTY": {
+        "description": "Cliente SSH y telnet para la administración remota de servidores.",
+        "projects": ["Gestión de servidores Linux", "Configuración de redes"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "com0com": {
+        "description": "Emulador de puerto serie de código abierto para Windows.",
+        "projects": ["Pruebas de comunicación serie", "Simulación de hardware"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Visual Paradigm": {
+        "description": "Herramienta de diseño de software y modelado UML.",
+        "projects": ["Diagramas de arquitectura", "Modelado de procesos"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Excel": {
+        "description": "Software de hoja de cálculo líder para análisis de datos.",
+        "projects": ["Gestión financiera", "Análisis estadístico"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "PowerPoint": {
+        "description": "Software de presentaciones para comunicación visual.",
+        "projects": ["Presentaciones de proyectos XAE", "Propuestas técnicas"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Word": {
+        "description": "Procesador de textos para creación de documentos.",
+        "projects": ["Informes técnicos", "Documentación administrativa"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Canva": {
+        "description": "Herramienta de diseño gráfico simplificado.",
+        "projects": ["Material publicitario XAE", "Infografías"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Overleaf": {
+        "description": "Editor LaTeX colaborativo basado en la nube.",
+        "projects": ["Tesis y artículos académicos", "Informes de laboratorio"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "tool"
+    },
+    "Astronomy": {
+        "description": "Estudio de los cuerpos celestes y el universo.",
+        "projects": ["Observación estelar", "Astrofotografía"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "CAD Design": {
+        "description": "Diseño asistido por computadora para ingeniería mecánica.",
+        "projects": ["Modelado de piezas complejas", "Ensamblajes"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "CFD Simulation": {
+        "description": "Análisis de dinámica de fluidos computacional.",
+        "projects": ["Simulación de aerodinámica", "Transferencia de calor"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "Engineering Simulation": {
+        "description": "Simulación de sistemas de ingeniería complejos.",
+        "projects": ["Análisis de fatiga", "Simulación dinámica"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "UI Development": {
+        "description": "Diseño y desarrollo de interfaces de usuario.",
+        "projects": ["Dashboards de telemetría", "Frontends web"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "Web Applications": {
+        "description": "Desarrollo de aplicaciones web dinámicas y escalables.",
+        "projects": ["Sistemas de gestión", "Plataformas interactivas"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
+    },
+    "Mobile Applications": {
+        "description": "Desarrollo de aplicaciones para dispositivos móviles.",
+        "projects": ["Apps de monitoreo", "Interfaces móviles"],
+        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "type": "interest"
     }
 };
 

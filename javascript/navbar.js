@@ -28,6 +28,8 @@ function highlightActiveLink() {
 
 function addNavLinkListeners() {
     const navLinks = document.querySelectorAll('nav ul li a');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-links');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
@@ -37,9 +39,22 @@ function addNavLinkListeners() {
                 loadComponentWithAnimation('content', `html/${targetSection}.html`);
                 updateURL(targetSection);
                 setActiveLink(this);
+
+                // Close mobile menu if open
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                }
             }
         });
     });
+
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    }
 }
 
 function setActiveLink(activeLink) {
