@@ -122,6 +122,12 @@ const cvData = {
         "media": "https://global.discourse-cdn.com/streamlit/original/3X/f/7/f7136dad2cacb4ac9b92e8663ae15144b26bb328.gif",
         "type": "ide"
     },
+    "OpenRocket": {
+        "description": "Software de simulación y análisis de cohetes experimentales.",
+        "projects": ["Simulación de trayectorias", "Análisis de estabilidad aerodinámica", "Diseño de cohetería experimental"],
+        "media": "https://openrocket.info/assets/img/whats-new/22.02/photo-studio.gif",
+        "type": "engineering"
+    },
 
     // Herramientas / Frameworks
     "Flutter": {
@@ -275,139 +281,139 @@ const cvData = {
     "LaTeX": {
         "description": "Sistema de composición de textos de alta calidad para documentos científicos.",
         "projects": ["Documentación técnica XAE", "Artículos de investigación"],
-        "media": "https://miro.medium.com/v2/resize:fit:1200/1*m9eS1W6N9eG-8rN_v_0Q9Q.gif",
+        "media": "https://raw.githubusercontent.com/overleaf-workshop/Overleaf-Workshop/master/docs/assets/demo03-synctex.gif",
         "type": "tool"
     },
     "MySQL": {
         "description": "Sistema de gestión de bases de datos relacionales de código abierto.",
         "projects": ["Backend de aplicaciones web", "Sistemas de inventario"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/l41lTfN3jK4lU1l6s/giphy.gif",
+        "media": "https://bennadel-cdn.com/resources/uploads/2024/conditionally-update-column-on-duplicate-key-update-mysql.gif",
         "type": "database"
     },
     "PostgreSQL": {
         "description": "Base de datos relacional orientada a objetos potente y escalable.",
         "projects": ["Análisis de datos complejos", "Geolocalización"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://miro.medium.com/v2/resize:fit:1400/1*Y0xkl1CzDCp82nV8lIpRgg.gif",
         "type": "database"
     },
     "SQLite": {
         "description": "Motor de base de datos SQL ligero y autónomo.",
         "projects": ["Almacenamiento local en apps móviles", "Prototipos rápidos"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKVUn7iM8FMEU24/giphy.gif",
+        "media": "https://bennadel-cdn.com/resources/uploads/2024/in-memory-sqlite-databases-reset-lucee-cfml@2x.gif",
         "type": "database"
     },
     "MongoDB": {
         "description": "Base de datos NoSQL orientada a documentos.",
         "projects": ["Gestión de contenido dinámico", "Big Data"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/l41lTfN3jK4lU1l6s/giphy.gif",
+        "media": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/blt0d76db4bb3afe25f/69051f614d2a1034e571608e/1_Create_search_index-srsc3a86fl.gif",
         "type": "database"
     },
     "H2 Database": {
         "description": "Base de datos relacional rápida escrita en Java.",
         "projects": ["Pruebas unitarias", "Bases de datos embebidas"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLW9bDLRX16HWxlSk1SJ8aHWSd8peiW2doUmBbrBg8RHu6NoUUpeR45u9lZOdEbTE8Rl4NwFEf4SdmyIJosQA6Vr8tQGMeJVitu8k0_bd1MEa53HWB6WMsa6b7yP9hZbbtoxUvvKpVALw/s1600/JNIScriptEngine3.gif",
         "type": "database"
     },
     "Windows": {
         "description": "Sistema operativo principal para entornos corporativos y gaming.",
         "projects": ["Estaciones de diseño CAD", "Desarrollo .NET"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://microsofters.com/wp-content/uploads/2021/07/gif-windows-11.gif",
         "type": "os"
     },
     "Unity VR": {
         "description": "Desarrollo de experiencias inmersivas de Realidad Virtual.",
         "projects": ["Simuladores de entrenamiento", "Visualización 3D"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://miro.medium.com/1*oou_7zWJB_n6OkMmfe_org.gif",
         "type": "game_dev"
     },
     "PuTTY": {
         "description": "Cliente SSH y telnet para la administración remota de servidores.",
         "projects": ["Gestión de servidores Linux", "Configuración de redes"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://scrp.econ.cuhk.edu.hk/assets/images/gifs/putty_login.gif",
         "type": "tool"
     },
     "com0com": {
         "description": "Emulador de puerto serie de código abierto para Windows.",
         "projects": ["Pruebas de comunicación serie", "Simulación de hardware"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://www.snapfiles.com/screenfiles/com0com.png",
         "type": "tool"
     },
     "Visual Paradigm": {
         "description": "Herramienta de diseño de software y modelado UML.",
         "projects": ["Diagramas de arquitectura", "Modelado de procesos"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://online.visual-paradigm.com/images/features-media/real-time-collaboration/screen-sharing.gif",
         "type": "tool"
     },
     "Excel": {
         "description": "Software de hoja de cálculo líder para análisis de datos.",
         "projects": ["Gestión financiera", "Análisis estadístico"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://blogs.windows.com/wp-content/uploads/prod/sites/9/2017/09/59316d4298ae51cbd07c0e5999840c9d.gif",
         "type": "tool"
     },
     "PowerPoint": {
         "description": "Software de presentaciones para comunicación visual.",
         "projects": ["Presentaciones de proyectos XAE", "Propuestas técnicas"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://24slides.com/presentbetter/content/images/2021/05/animation-in-powerpoint.gif",
         "type": "tool"
     },
     "Word": {
         "description": "Procesador de textos para creación de documentos.",
         "projects": ["Informes técnicos", "Documentación administrativa"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://www.inavirtual.ed.cr/pluginfile.php/2974129/mod_resource/content/4/formatoAtexto.gif",
         "type": "tool"
     },
     "Canva": {
         "description": "Herramienta de diseño gráfico simplificado.",
         "projects": ["Material publicitario XAE", "Infografías"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://content-management-files.canva.com/378ab46b-6fe6-439c-85cb-0337256e99d7/Hide-Page.gif",
         "type": "tool"
     },
     "Overleaf": {
         "description": "Editor LaTeX colaborativo basado en la nube.",
         "projects": ["Tesis y artículos académicos", "Informes de laboratorio"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://images.ctfassets.net/nrgyaltdicpt/1TmkdxYxXXuTUKRarLDGUB/d8626ac1903f384a50463a1416b325a2/overleaf-language-tool.gif",
         "type": "tool"
     },
     "Astronomy": {
         "description": "Estudio de los cuerpos celestes y el universo.",
         "projects": ["Observación estelar", "Astrofotografía"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Orbital_motion.gif",
         "type": "interest"
     },
     "CAD Design": {
         "description": "Diseño asistido por computadora para ingeniería mecánica.",
         "projects": ["Modelado de piezas complejas", "Ensamblajes"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://onecadvn.com/Upload/images/consulting/inventor/lap-ghep-trong-inventor.gif",
         "type": "interest"
     },
     "CFD Simulation": {
         "description": "Análisis de dinámica de fluidos computacional.",
         "projects": ["Simulación de aerodinámica", "Transferencia de calor"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://personalpages.manchester.ac.uk/staff/david.d.apsley/images/cfd/turbine.gif",
         "type": "interest"
     },
     "Engineering Simulation": {
         "description": "Simulación de sistemas de ingeniería complejos.",
         "projects": ["Análisis de fatiga", "Simulación dinámica"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://www.upfronteng.com/wpimages/Heat_sink_vectors.gif",
         "type": "interest"
     },
     "UI Development": {
         "description": "Diseño y desarrollo de interfaces de usuario.",
         "projects": ["Dashboards de telemetría", "Frontends web"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://wezom.com/Media/files/filemanager/blog/ui-and-ux-design/_4.gif",
         "type": "interest"
     },
     "Web Applications": {
         "description": "Desarrollo de aplicaciones web dinámicas y escalables.",
         "projects": ["Sistemas de gestión", "Plataformas interactivas"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://docs.webhostmost.com/img/doc-movies/deploy-nodejs.gif?t=1776211200070",
         "type": "interest"
     },
     "Mobile Applications": {
         "description": "Desarrollo de aplicaciones para dispositivos móviles.",
         "projects": ["Apps de monitoreo", "Interfaces móviles"],
-        "media": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzB6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3/3o7TKMGV3T1tN5wZ1K/giphy.gif",
+        "media": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3f148997-00b3-4105-9922-66c5cf569f11/mobile-app-design-image108.gif",
         "type": "interest"
     }
 };
