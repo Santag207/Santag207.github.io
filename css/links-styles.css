@@ -1,5 +1,134 @@
-/* Redesigned to use nasa-theme variables and home-styles structures */
-
 .links-wrapper {
-    /* Uses home-wrapper styles */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.comm-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: rgba(0, 242, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-height: 220px;
+}
+
+.comm-card:hover {
+    background: rgba(0, 242, 255, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.4);
+    border-color: var(--accent-orange);
+}
+
+/* Scanning Line Effect on Hover */
+.comm-card::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 242, 255, 0.2),
+        transparent
+    );
+    pointer-events: none;
+}
+
+.comm-card:hover::after {
+    animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+.comm-status {
+    font-size: 0.7rem;
+    color: var(--accent-green);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.comm-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.comm-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px var(--accent-cyan));
+}
+
+.comm-info h3 {
+    margin: 0 0 10px 0;
+    color: var(--accent-cyan);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.comm-info p {
+    margin: 0 0 20px 0;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.comm-cta {
+    display: inline-block;
+    color: var(--accent-orange);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.comm-card:hover .comm-cta {
+    border-bottom-color: var(--accent-orange);
+    text-shadow: 0 0 8px var(--accent-orange);
+}
+
+.terminal-status {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.terminal-status p {
+    margin: 5px 0;
+    font-family: var(--font-main);
+}
+
+.status-detail {
+    color: var(--muted-grey);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .links-wrapper {
+        padding: 20px;
+    }
+
+    .comm-grid {
+        grid-template-columns: 1fr;
+    }
 }
